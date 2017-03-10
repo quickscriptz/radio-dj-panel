@@ -1,14 +1,17 @@
-<?php require('head.php');?>
-
-<center>
-
-<b><u>Logout</b></u><p>
-
-<h1>Are you sure you want to logout?</h1><p>
-
-<a href="logout2.php">Yes</a> | <a href="home.php">No</a>
-
-
-</center>
-
-<?php require('bottom.php');?>
+<?
+session_start();
+require('connect.php');
+$usroffline = mysql_query("UPDATE rp_users SET online = '' WHERE username = '$_SESSION[rp_username]'") or die(mysql_error());
+unset($_SESSION['rp_logged']); 
+unset($_SESSION['rp_username']); 
+unset($_SESSION['rp_passwrd']); 
+unset($_SESSION['rp_djname']); 
+unset($_SESSION['rp_email']); 
+unset($_SESSION['rp_rank']); 
+unset($_SESSION['rp_eusername']); 
+unset($_SESSION['rp_edjname']); 
+unset($_SESSION['rp_epasswrd']); 
+unset($_SESSION['rp_eemail']); 
+unset($_SESSION['rp_erank']); 
+header("Location: index.php");
+?>

@@ -3,12 +3,10 @@
 
 <html>
 <head>
-<title>Radio DJ Panel v3 - BETA</title>
+<title>Radio DJ Panel v3</title>
 <meta http-equiv="content-type" content="charset=UTF-8">
 <link rel="StyleSheet" href="../style.css" type="text/css" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="deep" href="../style_deep.css" />
 <script type="text/javascript" src="../checkbox.js"></script> 
-<script type="text/javascript" src="../styleswitcher.js"></script> 
 </head>
 <body>
 <?php require('../connect.php');?>

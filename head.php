@@ -1,1 +1,24 @@
-<?php $_F=__FILE__;$_X='Pz48P3BocCByNXEzNHI1KCdjaDVjay5waHAnKTs/Pg0KPCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9Xb0MvL0RURCBIVE1MIHUuMDYgVHIxbnM0dDQybjFsLy9FTiI+DQoNCjxodG1sPg0KPGg1MWQ+DQo8dDR0bDU+UjFkNDIgREogUDFuNWwgdm88L3Q0dGw1Pg0KPG01dDEgaHR0cC01cTM0dj0iYzJudDVudC10eXA1IiBjMm50NW50PSJjaDFyczV0PVVURi04Ij4NCjxsNG5rIHI1bD0iU3R5bDVTaDU1dCIgaHI1Zj0ic3R5bDUuY3NzIiB0eXA1PSJ0NXh0L2NzcyIgLz4NCjxsNG5rIHI1bD0iMWx0NXJuMXQ1IHN0eWw1c2g1NXQiIHR5cDU9InQ1eHQvY3NzIiBtNWQ0MT0ic2NyNTVuIiB0NHRsNT0iZDU1cCIgaHI1Zj0ic3R5bDVfZDU1cC5jc3MiIC8+DQo8c2NyNHB0IHR5cDU9InQ1eHQvajF2MXNjcjRwdCIgc3JjPSJjaDVja2IyeC5qcyI+PC9zY3I0cHQ+IA0KPHNjcjRwdCB0eXA1PSJ0NXh0L2oxdjFzY3I0cHQiIHNyYz0ic3R5bDVzdzR0Y2g1ci5qcyI+PC9zY3I0cHQ+IA0KPC9oNTFkPg0KPGIyZHk+DQo8P3BocCByNXEzNHI1KCdjMm5uNWN0LnBocCcpOz8+DQo8P3BocCByNXEzNHI1KCdmM25jdDQybnMucGhwJyk7Pz4NCg0KPGQ0diA0ZD0iYzVudDVyIj4NCjxkNHYgNGQ9Img1MWQ1ciI+Jm5ic3A7PC9kNHY+DQo8ZDR2IDRkPSIxbTVzczFnNSI+DQo8bTFycTM1NT48P3BocCByNXEzNHI1KCcxbTVzczFnNV9zdHlsNS5waHAnKTs/PjwvbTFycTM1NT4NCjwvZDR2Pg0KPGQ0diA0ZD0iYzJudDVudCI+DQo8ZDR2IDRkPSJtNW4zIj48ZDR2IDRkPSJtNW4zYzJudDVudHMiPg0KPD9waHAgcjVxMzRyNSgnbjF2NGcxdDQybl9zdHlsNS5waHAnKTs/Pg0KPC9kNHY+DQo8ZDR2IDRkPSJtMTRuIj4=';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php require('check.php');?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Radio DJ Panel v3</title>
+<meta http-equiv="content-type" content="charset=UTF-8">
+<link rel="StyleSheet" href="style.css" type="text/css" />
+<script type="text/javascript" src="checkbox.js"></script> 
+</head>
+<body>
+<?php require('connect.php');?>
+<?php require('functions.php');?>
+
+<div id="center">
+<div id="header">&nbsp;</div>
+<div id="amessage">
+<marquee><?php require('amessage_style.php');?></marquee>
+</div>
+<div id="content">
+<div id="menu"><div id="menucontents">
+<?php require('navigation_style.php');?>
+</div>
+<div id="main">

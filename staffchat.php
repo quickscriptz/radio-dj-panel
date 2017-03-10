@@ -13,7 +13,7 @@ $result = mysql_query("TRUNCATE rp_chat");
 }
 ?>
 
-<p><iframe height="200px" meta http-equiv="refresh" content="5" width="400px" src="chat.php"><h1>Your Browser Does Not Support iFrames</h1></iframe><p>
+<p><iframe height="200px" content="5" width="400px" src="chat.php"><h1>Your Browser Does Not Support iFrames</h1></iframe><p>
 <?php require('connect.php');
 $djname = $_SESSION['rp_djname'];
 $message = $_POST['message'];

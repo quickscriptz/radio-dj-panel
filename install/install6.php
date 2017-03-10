@@ -55,10 +55,13 @@
 <center>
 
 <b><u>Create Panel Admin</b></u><p>
-Fill in the form below to create your panel's first user, the root admin.<p>
+Fill in the form below to create your panel's first user, the root admin.<br/>
+The root admin account will be protected from editing/deletion by other accounts.<p><br/>
 
 <?php
-if (!isset($_POST['register'])) {
+$cnt = mysql_query("SELECT * FROM rp_users WHERE id = '1'");
+$num = mysql_num_rows($cnt);
+if (!$_POST['register'] && $num == 0){
 echo '<form method="POST" action="install6.php">
 Username:<br>
 <input type="text" size="25" maxlength="30" name="username"><p>
@@ -73,46 +76,45 @@ Email:<br>
 <input type="hidden" name="rank" value="Administrator">
 <input type="submit" name="register" value="Register">
 </form>';
-} else {
-//Are they just getting here or submitting their info?
-if (isset($_POST["register"])) {
-$username = $_POST["username"];
-$djname = $_POST["djname"];
-$passwrd = encrypt($_POST["passwrd"]);
-$cpasswrd = encrypt($_POST["cpasswrd"]);
-$email = $_POST["email"];
-$rank = $_POST["rank"];
-//Was a field left blank?
-if($username==NULL|$djname==NULL|$passwrd==NULL|$cpasswrd==NULL|$email==NULL|$rank==NULL) {
-echo "<h1>A field(s) was left blank.<br><a href='javascript:history.back()'>Go Back</a></h1>";
-}else{
-//Do the passwords match?
-if($passwrd!=$cpasswrd) {
-echo "<h1>Passwords do not match.<br><a href='javascript:history.back()'>Go Back</a></h1>";
-}else{
-//Has the username or email been used?
-$checkuser = mysql_query("SELECT username FROM rp_users WHERE username='$username'");
-$username_exist = mysql_num_rows($checkuser);
-$checkemail = mysql_query("SELECT email FROM rp_users WHERE email='$email'");
-$email_exist = mysql_num_rows($checkemail);
-if ($email_exist>0|$username_exist>0) {
-echo "<h1>The username or email is already in use.<br><a href='javascript:history.back()'>Go Back</a></h1>";
-}else{
-//Everything seems good, lets insert.
-$query = "INSERT INTO rp_users (username, djname, passwrd, email,rank) VALUES('$username','$djname','$passwrd','$email','$rank')";
-mysql_query($query) or die(mysql_error());
-echo "<h1>DJ $username has been successfully registered as an $rank.</h1><p><br><p>
-<form method='link' action='install7.php'><input type='submit' value='Finish Install'></form>";
-}
-}
-}
-}
+}elseif($_POST["register"] && $num == 0){
+	$username = $_POST["username"];
+	$djname = $_POST["djname"];
+	$passwrd = encrypt($_POST["passwrd"]);
+	$cpasswrd = encrypt($_POST["cpasswrd"]);
+	$email = $_POST["email"];
+	$rank = $_POST["rank"];
+	//Was a field left blank?
+	if($username==NULL|$djname==NULL|$passwrd==NULL|$cpasswrd==NULL|$email==NULL|$rank==NULL) {
+		echo "<h1>A field(s) was left blank.<br><a href='javascript:history.back()'>Go Back</a></h1>";
+	}else{
+		//Do the passwords match?
+		if($passwrd!=$cpasswrd) {
+			echo "<h1>Passwords do not match.<br><a href='javascript:history.back()'>Go Back</a></h1>";
+		}else{
+			//Has the username or email been used?
+			$checkuser = mysql_query("SELECT username FROM rp_users WHERE username='$username'");
+			$username_exist = mysql_num_rows($checkuser);
+			$checkemail = mysql_query("SELECT email FROM rp_users WHERE email='$email'");
+			$email_exist = mysql_num_rows($checkemail);
+			if ($email_exist>0|$username_exist>0) {
+				echo "<h1>The username or email is already in use.<br><a href='javascript:history.back()'>Go Back</a></h1>";
+			}else{
+				//Everything seems good, lets insert.
+				$query = "INSERT INTO rp_users (username, djname, passwrd, email,rank) VALUES('$username','$djname','$passwrd','$email','$rank')";
+				mysql_query($query) or die(mysql_error());
+				echo "<h1>DJ $username has been successfully registered as the Root Admin.</h1><p><br><p>
+				<form method='link' action='install7.php'><input type='submit' value='Finish Install'></form>";
+			}
+		}
+	}
+}elseif($num != 0){
+	echo "<h1>Root Admin Already Exists!</h1><p><br><p><form method='link' action='install7.php'><input type='submit' value='Continue!'></form>";
 }
 ?>
 
 </center>
 </div>
 </div></div>
-<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+<a href=http://www.quickscriptz.ca target=blank><div id=footer></div></div>
 </body>
 </html>

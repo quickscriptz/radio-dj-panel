@@ -28,7 +28,8 @@ session_start();
 <?php
 if (!isset($_POST['contact'])) {
 if($_SESSION['rp_rank'] == "Suspended"){
-echo "<h1>-Use the form below to contact the admin regarding your suspension-</h1><p>";
+	echo "<h1>-Your Account Has Been Suspended-</h1><p>";
+	echo "Please use the form below if you need to get in touch with the radio management.<br/><br/>";
 }
 echo "<form method='POST' action='contact_public.php'>
 Name:<br>
@@ -36,13 +37,16 @@ Name:<br>
 Email:<br>
 <input type='text' size='40' name='email'><p>
 <b>Subject:</b><br>
-<select name='subject'>
-<option selected>General Question</option>
-<option>Dispute Suspension</option>
+<select name='subject'>";
+if($_SESSION['rp_rank'] == "Suspended"){
+	echo "<option>Dispute Suspension</option>";
+}else{
+	echo "<option selected>General Question</option>
 <option>Password Recovery</option>
 <option>Report Abuse</option>
-<option>Other</option>
-</select><p>
+<option>Other</option>";
+}
+echo "</select><p>
 <b>Message:</b><br>
 <textarea cols='30' rows='8' name='message'></textarea><p>
 <input type='submit' name='contact' value='Send'>
@@ -72,6 +76,6 @@ echo "<p><h1>Your submission has been sent!</h1><p>";
 </center>
 </div>
 </div></div>
-<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+<a href=http://www.quickscriptz.ca target=blank><div id=footer></div></div>
 </body>
 </html>

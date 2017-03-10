@@ -224,28 +224,15 @@ color: #FFFFFF;
 font-family: Verdana;
 font-size: 10px;
 color: #FFFFFF;
+padding:2px 2px 2px 2px;
 }
 
 #timetable a {
 font-family: Verdana;
 font-size: 10px;
 color: #FFFFFF;
-font-weight: normal;
-}
-
-#timetable a:link {
 text-decoration: none;
 font-weight: normal;
-}
-
-#timetable a:visited {
-text-decoration: none;
-font-weight: normal;
-}
-
-#timetable a:active {
-text-decoration: none;
-font-weight: bold;
 }
 
 #timetable a:hover {
@@ -254,37 +241,6 @@ font-weight: bold;
 color: #000000;
 }
 
-#timetable_pub {
-font-family: Verdana;
-font-size: 10px;
-color: #000000;
-}
-
-#timetable_pub td {
-font-family: Verdana;
-font-size: 10px;
-color: #000000;
-}
-
-#timetable_pub a {
-font-family: Verdana;
-font-size: 10px;
-color: #0000FF;
-}
-
-#timetable_pub a:link {
-text-decoration: none;
-}
-
-#timetable_pub a:visited {
-text-decoration: none;
-}
-
-#timetable_pub a:active {
-text-decoration: none;
-}
-
-#timetable_pub a:hover {
-text-decoration: underline;
-color: #0000FF;
+#timetable .colour{
+background:#126296;
 }

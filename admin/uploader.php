@@ -2,6 +2,69 @@
 
 <center><b><u>Upload A File</u></b><p>
 
-<?php $_F=__FILE__;$_X='Pz48P3BocA0KJHAxdGg9ICIuLi8zcGwyMWRzLyIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDUnXVsnbjFtNSddOw0KNGYoJDNmNGw1ICE9bjJuNSkNCnsNCjRmKGMycHkoJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDUnXVsndG1wX24xbTUnXSwgJHAxdGgpKQ0Kew0KNWNoMiAiPGg2Pi1GNGw1IHMzY2M1c3NmM2xseSAzcGwyMWQ1ZC08YnI+PDEgaHI1Zj0nM3BsMjFkLnBocCc+VXBsMjFkIE0ycjUgRjRsNXM8LzE+PC9oNj4iOw0KNWNoMiAiPGJyPjxociB3NGR0aD0nNzAlJz48cD48dDFibDUgdzRkdGg9JzcwJScgYjJyZDVyPScwJz4NCjx0cj4NCjx0ZCB3NGR0aD0ndTAlJz48Yj48Mz5GNGw1IE4xbTU8LzM+PC9iPjwvdGQ+DQo8dGQgdzRkdGg9J28wJSc+PGI+PDM+RjRsNSBTNHo1PC8zPjwvYj48L3RkPg0KPHRkIHc0ZHRoPSdvMCUnPjxiPjwzPkY0bDUgVHlwNTwvMz48L2I+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgdzRkdGg9J3UwJSc+PDEgaHI1Zj0nJHAxdGgnIHQxcmc1dD0nYmwxbmsnPiIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDUnXVsnbjFtNSddLiI8LzE+PC90ZD4NCjx0ZCB3NGR0aD0nbzAlJz4iLiRIVFRQX1BPU1RfRklMRVNbJzNmNGw1J11bJ3M0ejUnXS4iIEJ5dDVzPC90ZD4NCjx0ZCB3NGR0aD0nbzAlJz4iLiRIVFRQX1BPU1RfRklMRVNbJzNmNGw1J11bJ3R5cDUnXS4iPC90ZD4NCjwvdHI+PC90MWJsNT4iOw0KfQ0KNWxzNQ0Kew0KNWNoMiAiPGg2Pi1BbiA1cnIyciAyY2MzcjVkIHdoNGw1IHByMmM1c3M0bmcgdGg1IGY0bDUgMnIgbjIgZjRsNSB3MXMgczVsNWN0NWQtPC9oNj4iOw0KfQ0KfQ0KPz4NCg0KPD9waHANCiRwMXRoPSAiLi4vM3BsMjFkcy8iLiRIVFRQX1BPU1RfRklMRVNbJzNmNGw1YSddWyduMW01J107DQo0ZigkM2Y0bDVhICE9bjJuNSkNCnsNCjRmKGMycHkoJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDVhJ11bJ3RtcF9uMW01J10sICRwMXRoKSkNCnsNCjVjaDIgIjx0MWJsNSB3NGR0aD0nNzAlJyBiMnJkNXI9JzAnPjx0cj4NCjx0ZCB3NGR0aD0ndTAlJz48MSBocjVmPSckcDF0aCcgdDFyZzV0PSdibDFuayc+Ii4kSFRUUF9QT1NUX0ZJTEVTWyczZjRsNSddWyduMW01J10uIjwvMT48L3RkPg0KPHRkIHc0ZHRoPSdvMCUnPiIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDUnXVsnczR6NSddLiIgQnl0NXM8L3RkPg0KPHRkIHc0ZHRoPSdvMCUnPiIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDUnXVsndHlwNSddLiI8L3RkPg0KPC90cj48L3QxYmw1PiI7DQp9DQo1bHM1DQp7DQo1Y2gyICI8aDY+LUFuIDVycjJyIDJjYzNyNWQgd2g0bDUgcHIyYzVzczRuZyB0aDUgZjRsNSAyciBuMiBmNGw1IHcxcyBzNWw1Y3Q1ZC08L2g2PiI7DQp9DQp9DQo/Pg0KDQo8P3BocA0KJHAxdGg9ICIuLi8zcGwyMWRzLyIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDVvJ11bJ24xbTUnXTsNCjRmKCQzZjRsNW8gIT1uMm41KQ0Kew0KNGYoYzJweSgkSFRUUF9QT1NUX0ZJTEVTWyczZjRsNW8nXVsndG1wX24xbTUnXSwgJHAxdGgpKQ0Kew0KNWNoMiAiPHQxYmw1IHc0ZHRoPSc3MCUnIGIycmQ1cj0nMCc+PHRyPg0KPHRkIHc0ZHRoPSd1MCUnPjwxIGhyNWY9JyRwMXRoJyB0MXJnNXQ9J2JsMW5rJz4iLiRIVFRQX1BPU1RfRklMRVNbJzNmNGw1byddWyduMW01J10uIjwvMT48L3RkPg0KPHRkIHc0ZHRoPSdvMCUnPiIuJEhUVFBfUE9TVF9GSUxFU1snM2Y0bDVvJ11bJ3M0ejUnXS4iIEJ5dDVzPC90ZD4NCjx0ZCB3NGR0aD0nbzAlJz4iLiRIVFRQX1BPU1RfRklMRVNbJzNmNGw1byddWyd0eXA1J10uIjwvdGQ+DQo8L3RyPjwvdDFibDU+IjsNCn0NCjVsczUNCnsNCjVjaDIgIjxoNj4tQW4gNXJyMnIgMmNjM3I1ZCB3aDRsNSBwcjJjNXNzNG5nIHRoNSBmNGw1IDJyIG4yIGY0bDUgdzFzIHM1bDVjdDVkLTwvaDY+IjsNCn0NCn0NCj8+DQo=';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php
+$path= "../uploads/".$HTTP_POST_FILES['ufile']['name'];
+if($ufile !=none)
+{
+if(copy($HTTP_POST_FILES['ufile']['tmp_name'], $path))
+{
+echo "<h1>-File successfully uploaded-<br><a href='upload.php'>Upload More Files</a></h1>";
+echo "<br><hr width='70%'><p><table width='70%' border='0'>
+<tr>
+<td width='40%'><b><u>File Name</u></b></td>
+<td width='30%'><b><u>File Size</u></b></td>
+<td width='30%'><b><u>File Type</u></b></td>
+</tr>
+<tr>
+<td width='40%'><a href='$path' target='blank'>".$HTTP_POST_FILES['ufile']['name']."</a></td>
+<td width='30%'>".$HTTP_POST_FILES['ufile']['size']." Bytes</td>
+<td width='30%'>".$HTTP_POST_FILES['ufile']['type']."</td>
+</tr></table>";
+}
+else
+{
+echo "<h1>-An error occured while processing the file or no file was selected-</h1>";
+}
+}
+?>
+
+<?php
+$path= "../uploads/".$HTTP_POST_FILES['ufile2']['name'];
+if($ufile2 !=none)
+{
+if(copy($HTTP_POST_FILES['ufile2']['tmp_name'], $path))
+{
+echo "<table width='70%' border='0'><tr>
+<td width='40%'><a href='$path' target='blank'>".$HTTP_POST_FILES['ufile']['name']."</a></td>
+<td width='30%'>".$HTTP_POST_FILES['ufile']['size']." Bytes</td>
+<td width='30%'>".$HTTP_POST_FILES['ufile']['type']."</td>
+</tr></table>";
+}
+else
+{
+echo "<h1>-An error occured while processing the file or no file was selected-</h1>";
+}
+}
+?>
+
+<?php
+$path= "../uploads/".$HTTP_POST_FILES['ufile3']['name'];
+if($ufile3 !=none)
+{
+if(copy($HTTP_POST_FILES['ufile3']['tmp_name'], $path))
+{
+echo "<table width='70%' border='0'><tr>
+<td width='40%'><a href='$path' target='blank'>".$HTTP_POST_FILES['ufile3']['name']."</a></td>
+<td width='30%'>".$HTTP_POST_FILES['ufile3']['size']." Bytes</td>
+<td width='30%'>".$HTTP_POST_FILES['ufile3']['type']."</td>
+</tr></table>";
+}
+else
+{
+echo "<h1>-An error occured while processing the file or no file was selected-</h1>";
+}
+}
+?>
+
 
 <?php require('bottom.php');?>

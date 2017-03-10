@@ -15,11 +15,11 @@ $result = mysql_query("DELETE FROM rp_alerts WHERE id = '$row[id]'") or die(mysq
 }else{
 if($row['expire'] > date("G.i")&&$toip == "ALL"){
 echo '<script language="JavaScript" type="text/javascript">
-alert("DJ '.$row['fromdj'].' Says: '.$row['message'].'")</script>';
+alert("DJ '.$row['fromdj'].' Says: '.addslashes(stripslashes(html_entity_decode($row['message']))).'")</script>';
 }else{
 if($row['toip'] == "ALL"){
 echo '<script language="JavaScript" type="text/javascript">
-alert("DJ '.$row['fromdj'].' Says: '.$row['message'].'")</script>';
+alert("DJ '.$row['fromdj'].' Says: '.addslashes(stripslashes(html_entity_decode($row['message']))).'")</script>';
 }else{
 if($ipaddr == $row['toip']) {
 echo '<script language="JavaScript" type="text/javascript">

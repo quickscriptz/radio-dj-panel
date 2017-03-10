@@ -16,14 +16,6 @@ while($row = mysql_fetch_assoc($result)) {
 echo "$row[panel_version]<br/>";
 }
 echo "<p></p>
-<div class='title'>Style</div><center>
-<select name='switchcontrol' size='1'
-onChange='chooseStyle(this.options[this.selectedIndex].value, 60)'>
-<option value='none' selected='selected'>Default Style</option>
-<option value='deep'>Deep Green</option>
-</select>
-</form></center>
-<p></p>
 <div class='title'>Radio</div>
 -<a href='../home.php'>Home</a><br/>
 -<a href='../news.php'>News</a><br/>

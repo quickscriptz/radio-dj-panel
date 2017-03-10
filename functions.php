@@ -1,1 +1,147 @@
-<?php $_F=__FILE__;$_X='Pz48P3BocA0KIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjDQojIEVuY3J5cHQ0Mm4gU3QzZmYNCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KZjNuY3Q0Mm4gNW5jcnlwdDJyKCRzdHI0bmcpDQp7DQogICAgJHN0cjRuZyA9IHN0cnI1digkc3RyNG5nKTsNCiAgICAkc3RyNG5nYSA9IG1kaShzaDE2KCRzdHI0bmcpKTsNCiAgICAkc3RyNG5nbyA9IHN0cnI1dihjcmNvYShzdHJsNW4oJHN0cjRuZ2EpKSk7DQogICAgJHN0cjRuZ3UgPSBjcnlwdCgkc3RyNG5nYSwgJHN0cjRuZ28pOw0KICAgICRzdHI0bmdpID0gc2gxNihtZGkoYjFzNWV1XzVuYzJkNShzdHI0bmdvKSkpOw0KICAgICRmNG4xbCA9IG1kaShzdHJyNXYoYjFzNWV1XzVuYzJkNShzaDE2KGNyeXB0KCRzdHI0bmc4LCAkc3RyNG5ndSkpKSkpOw0KICAgIHI1dDNybiAkZjRuMWw7DQp9DQoNCmYzbmN0NDJuIDVuY3J5cHQoJHN0cjRuZykNCnsNCiAgICAkc3RyNG5nID0gc3RycjV2KCRzdHI0bmcpOw0KICAgICRzdHI0bmdhID0gbWRpKHNoMTYoJHN0cjRuZykpOw0KICAgICRzdHI0bmdvID0gY3J5cHQoJHN0cjRuZ2EsICRzdHI0bmdhKTsNCiAgICAkc3RyNG5ndSA9IGIxczVldV81bmMyZDUoc2gxNihtZGkoJHN0cjRuZ28pKSk7DQogICAgJHN0cjRuZ2kgPSBjcmNvYShzdHJyNXYoJHN0cjRuZ3UpKTsNCiAgICAkc3RyNG5nZSA9IHNoMTYobWRpKCRzdHI0bmdpKSk7DQogICAgJHN0cjRuZzcgPSBzdHJsNW4oY3J5cHQoJHN0cjRuZ2ksICRzdHI0bmdhKSk7ICANCiAgICAkc3RyNG5nOCA9IDVuY3J5cHQycigkc3RyNG5nNyk7DQogICAgJGY0bjFsID0gc3RycjV2KG1kaShzaDE2KGIxczVldV81bmMyZDUoY3J5cHQoJHN0cjRuZzgsICRzdHI0bmd1KSkpKSk7DQogICAgcjV0M3JuICRmNG4xbDsNCn0NCg0KZjNuY3Q0Mm4gNW5jKCRzdHI0bmcpDQp7DQogICAgJHN0cjRuZyA9IHN0cnI1digkc3RyNG5nKTsNCiAgICAkc3RyNG5nYSA9IG1kaShzaDE2KCRzdHI0bmcpKTsNCiAgICAkc3RyNG5nbyA9IGNyeXB0KCRzdHI0bmdhLCAkc3RyNG5nYSk7DQogICAgJHN0cjRuZ3UgPSBiMXM1ZXVfNW5jMmQ1KHNoMTYobWRpKCRzdHI0bmdvKSkpOw0KICAgICRzdHI0bmdpID0gY3Jjb2Eoc3RycjV2KCRzdHI0bmd1KSk7DQogICAgJHN0cjRuZ2UgPSBzaDE2KG1kaSgkc3RyNG5naSkpOw0KICAgICRzdHI0bmc3ID0gc3RybDVuKGNyeXB0KCRzdHI0bmdpLCAkc3RyNG5nYSkpOyAgDQogICAgJHN0cjRuZzggPSA1bmNyeXB0MnIoJHN0cjRuZzcpOw0KICAgICRmNG4xbCA9IHN0cnI1dihtZGkoc2gxNihiMXM1ZXVfNW5jMmQ1KGNyeXB0KCRzdHI0bmc4LCAkc3RyNG5ndSkpKSkpOw0KICAgIHI1dDNybiAkZjRuMWw7DQp9DQoNCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KIyBSNXM0ejUgT3Y1cnM0ejVkIFByMmY0bDUgSW0xZzVzDQojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMNCmYzbmN0NDJuIDRtMWc1UjVzNHo1KCR3NGR0aCwgJGg1NGdodCwgJHQxcmc1dCkgeyANCjRmICgkdzRkdGggPiAkaDU0Z2h0KSB7IA0KJHA1cmM1bnQxZzUgPSAoJHQxcmc1dCAvICR3NGR0aCk7IA0KfSA1bHM1IHsgDQokcDVyYzVudDFnNSA9ICgkdDFyZzV0IC8gJGg1NGdodCk7IA0KfSANCiR3NGR0aCA9IHIyM25kKCR3NGR0aCAqICRwNXJjNW50MWc1KTsgDQokaDU0Z2h0ID0gcjIzbmQoJGg1NGdodCAqICRwNXJjNW50MWc1KTsgDQpyNXQzcm4gInc0ZHRoPVwiJHc0ZHRoXCIgaDU0Z2h0PVwiJGg1NGdodFwiIjsgDQp9IA0KDQojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMNCiMgQjFkIFcycmQgRjRsdDVyDQojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMNCiMgTjJ0IGYyciB5MjNyIGNoNGxkcjVuIDJyIHA1MnBsNSB3NHRoIElRJ3MNCiMgbDJ3NXIgdGgxbiBpMCA6UA0KIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjDQpmM25jdDQybiBsMW5nMzFnNV9mNGx0NXIoJHN0cjRuZykgew0KICAkMmJzYzVuNHQ0NXMgPSAxcnIxeSgNCiAgICAgICJmM2NrIiwNCiAgICAgICJmM2NrNXIiLA0KICAgICAgImI0dGNoIiwNCiAgICAgICJjMmNrIiwNCiAgICAgICJuNGdnNXIiLA0KICAgICAgInAzc3N5IiwNCiAgICAgICIxc3NoMmw1IiwNCiAgICAgICJiMXN0MXJkIiwNCiAgICAgICJjM250IiwNCiAgICAgICJzaDR0IiwNCiAgICAgICJiM2xsc2g0dCIsDQogICAgICAid2gycjUiDQogICAgICApOw0KICAgIGYycjUxY2ggKCQyYnNjNW40dDQ1cyAxcyAkYzNyczVfdzJyZCkgew0KICAgICAgICA0ZiAoc3RyNHN0cih0cjRtKCRzdHI0bmcpLCRjM3JzNV93MnJkKSkgew0KICAgICAgICAgICAgJGw1bmd0aCA9IHN0cmw1bigkYzNyczVfdzJyZCk7DQogICAgICAgICAgICBmMnIgKCQ0ID0gNjsgJDQgPD0gJGw1bmd0aDsgJDQrKykgew0KICAgICAgICAgICAgICAgICRzdDFycyAuPSAiKioqKiI7DQogICAgICAgICAgICB9DQogICAgICAgICAgICAkc3RyNG5nID0gNXI1ZzRfcjVwbDFjNSgkYzNyczVfdzJyZCwkc3QxcnMsdHI0bSgkc3RyNG5nKSk7DQogICAgICAgICAgICAkc3QxcnMgPSAiIjsNCiAgICAgICAgfQ0KICAgIH0NCiAgICByNXQzcm4gJHN0cjRuZzsNCn0NCj8+';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php
+
+###################################
+# Copyright Notice
+###################################
+# All script, code, and any form of programming
+# contained in the Radio DJ Panel script distributed
+# by QuickScriptz or any of it's affiliates is
+# owned an copyrighted to QuickScriptz. You
+# may not modify any of the code and then
+# use/claim it as your own.
+###################################
+# Just A Friendly Reminder  :)
+###################################
+
+
+##############################
+# Set The Default Timezone
+##############################
+# To Change Refer To: 
+# http://www.modwest.com/help/kb5-258.html
+# http://php.net/manual/en/timezones.php
+#
+# Uncomment one of the two lines starting with "//"
+##############################
+# Not supported by all servers
+// putenv("TZ=America/Montreal");
+
+# Requires PHP 5+
+// date_default_timezone_set("EST");
+
+
+
+##############################
+# Encryption Stuff
+##############################
+function encryptor($string)
+{
+    $string = strrev($string);
+    $string2 = md5(sha1($string));
+    $string3 = strrev(crc32(strlen($string2)));
+    $string4 = crypt($string2, $string3);
+    $string5 = sha1(md5(base64_encode(string3)));
+    $final = md5(strrev(base64_encode(sha1(crypt($string8, $string4)))));
+    return $final;
+}
+
+function encrypt($string)
+{
+    $string = strrev($string);
+    $string2 = md5(sha1($string));
+    $string3 = crypt($string2, $string2);
+    $string4 = base64_encode(sha1(md5($string3)));
+    $string5 = crc32(strrev($string4));
+    $string6 = sha1(md5($string5));
+    $string7 = strlen(crypt($string5, $string2));  
+    $string8 = encryptor($string7);
+    $final = strrev(md5(sha1(base64_encode(crypt($string8, $string4)))));
+    return $final;
+}
+
+function enc($string)
+{
+    $string = strrev($string);
+    $string2 = md5(sha1($string));
+    $string3 = crypt($string2, $string2);
+    $string4 = base64_encode(sha1(md5($string3)));
+    $string5 = crc32(strrev($string4));
+    $string6 = sha1(md5($string5));
+    $string7 = strlen(crypt($string5, $string2));  
+    $string8 = encryptor($string7);
+    $final = strrev(md5(sha1(base64_encode(crypt($string8, $string4)))));
+    return $final;
+}
+
+##############################
+# Resize Oversized Profile Images
+##############################
+function imageResize($width, $height, $target) { 
+if ($width > $height) { 
+$percentage = ($target / $width); 
+} else { 
+$percentage = ($target / $height); 
+} 
+$width = round($width * $percentage); 
+$height = round($height * $percentage); 
+return "width=\"$width\" height=\"$height\""; 
+} 
+
+##############################
+# Bad Word Filter
+##############################
+# Not for your children or people with IQ's
+# lower than 50 :P
+##############################
+function language_filter($string) {
+  $obscenities = array(
+      "fuck",
+      "fucker",
+      "bitch",
+      "cock",
+      "nigger",
+      "pussy",
+      "asshole",
+      "bastard",
+      "cunt",
+      "shit",
+      "bullshit",
+      "whore"
+      );
+    foreach ($obscenities as $curse_word) {
+        if (stristr(trim($string),$curse_word)) {
+            $length = strlen($curse_word);
+            for ($i = 1; $i <= $length; $i++) {
+                $stars .= "****";
+            }
+            $string = preg_replace($curse_word,$stars,trim($string));
+            $stars = "";
+        }
+    }
+    return $string;
+}
+
+##############################
+# Checkid
+##############################
+
+function make_checkid(){
+	// Get preliminary info
+	$name = $_SERVER['SERVER_NAME'];
+	$ip = $_SERVER['SERVER_ADDR'];
+	$prot = $_SERVER['SERVER_SOFTWARE'];
+	$int = $_SERVER['GATEWAY_INTERFACE'];
+	$getadmin = mysql_query("SELECT * FROM rp_users WHERE id = '1'");
+	while($row = mysql_fetch_array($getadmin)){$username = $row['username'];}
+	// Replacement stuff
+	$finds = array('a', 'e', 'i', 'o', 'u', 'd', 's', '1', '7', '8', '3');
+	$found = array('p', 'E', 'l', 'g', 'z', 'w', 'r', '9', '2', '5', '4');
+	// Work it out
+	$pre = $name.$ip.$prot.$int.$username;
+	$pre = crypt($pre, $name).strrev($pre).crypt($pre, $ip);
+	$pre = str_replace($finds, $found, $pre);
+	$pre = base64_encode($pre.crypt($pre, $username));
+	$pre = ereg_replace("[^A-Za-z0-9]", "", $pre);
+	return $pre;
+}
+?>

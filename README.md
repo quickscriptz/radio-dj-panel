@@ -1,10 +1,10 @@
 # Radio DJ Panel
 
-**NOTE: This script is no longer actively maintained (as of December 2012).**
+**:rotating_light: This script is no longer actively maintained (as of December 2012) :rotating_light:**
 
 The Radio DJ Panel is a tool designed to make running an internet radio station both easy and fun. It provides all of the functionality you'll need to manage your DJs while also keeping your listeners engaged and involved.
 
-**Latest Version:** v3.0.3
+**Latest Version:** v3.1.0
 
 **Demo:** http://demo.quickscriptz.ca/rdjp3/
 
@@ -28,3 +28,11 @@ The Radio DJ Panel is a tool designed to make running an internet radio station 
 - User profiles and notes
 - Maintain list of banned songs and radio rules
 - General-purpose file uploader
+
+## Installation
+
+Refer to [INSTRUCTIONS.txt](INSTRUCTIONS.txt)
+
+## Changelog
+
+Refer to [CHANGELOG.txt](CHANGELOG.txt)
