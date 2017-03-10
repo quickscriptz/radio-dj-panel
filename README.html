@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Radio DJ Panel v3 - ReadMe</title>
+<meta http-equiv="content-type" content="charset=UTF-8">
+<link rel="StyleSheet" href="style.css" type="text/css">
+<script type="text/javascript" src="checkbox.js"></script> 
+<?php require('connect.php');?>
+<?php require('functions.php');?>
+</head>
+<body>
+
+<div id="center">
+<div id="header">&nbsp;</div>
+
+<div id="content">
+<div id="menu"><div id="menucontents">
+<div class="title">Contents</div>
+-<a href="#start">Start</a><br/>
+-<a href="#install">Installation</a><br/>
+-<a href="#license">License</a><br/>
+-<a href="#timetable">Timetable</a><br/>
+-<a href="#request">Request Line</a><br/>
+-<a href="#complaint">Complaints Form</a><br/>
+-<a href="#djmessage">DJ Message & Alerts</a><br/>
+-<a href="#support">Script Support</a><br/>
+</div></div>
+<div id="main">
+<center>
+
+<b><u>Radio DJ Panel v3 ReadMe</u></b><p>
+
+Thanks for downloading the Radio DJ Panel v3! Now that you have downloaded this script simply follow the instructions below to install and use your new Radio Panel!<p><br><hr width="70%"><p><br>
+
+<a name="start"><b>Staters Guide</b></a><br>
+The first thing you need do is upload the Radio DJ Panel files to your webserver. The preferred method to do this is via FTP Binary mode (in different modes the files may become corrupted). Once the files are on your webserver unzip the file and then read below for installation instructions!
+<h1>-Note: All Times Are In EST (Except Timetable)-</h1>
+<p><br><hr width="70%"><p><br>
+
+<a name="install"><b>Installation</b></a><br>
+Click <a href="install/index.php" target="blank">here</a> to open automated installer, just follow the instructions contained in each step.<p><br><hr width="70%"><p><br>
+
+<a name="license"><b>License Agreement</b></a><br>
+By downloading/storing this script on any type of media you are agreeing to our End User License Agreement. Click <a href="LICENSE.html">here</a> to view it.
+<p><br><hr width="70%"><p><br>
+
+<a name="timetable"><b>Public Timetable</b></a><br>
+If you want to display to your users a public version of your site's timetable that will automatically update as your users book their slots then link then to <a href="timetable_public.php" target="_blank">this</a> page.
+<p><br><hr width="70%"><p><br>
+
+<a name="request"><b>Request Line</b></a><br>
+To allow your users to submit requests to the on-air DJ use the code below;<p>
+<code>&#60;?php require('path/to/djpanel/request.php');?&#62;</code>
+<p><br><hr width="70%"><p><br>
+
+<a name="complaints"><b>Complaint Form</b></a><br>
+To allow your users to submit radio complaints to the radio admin (like report a dj);<p>
+<code>&#60;?php require('path/to/djpanel/complaint.php');?&#62;</code>
+<p><br><hr width="70%"><p><br>
+
+<a name="djmessage"><b>DJ Message</b></a><br>
+To allow your users to view the current dj message and receive alerts use code below, both codes refresh every 45 seconds;<p>
+<b>-Auto Refresh Only The iFrame-</b><br>
+<code>&#60;iframe src="path/to/djpanel/djmessage.php" frameborder="0" background-color="transparent" allowtransparency="true" height="20" width="200"&#62;&#60;/iframe&#62;</code><p>
+<b>-Auto Refresh Entire Page Without iFrames-</b><br>
+<code>&#60;?php require('path/to/djpanel/djmessage.php');?&#62;</code><p>
+<b>-No Reresh Without iFrames-</b><br>
+<code>&#60;?php require('path/to/djpanel/djmessage2.php');?&#62;</code>
+<p><br><hr width="70%"><p><br>
+
+<a name="support"><b>Script Support</b></a><br>
+For help or bug reporting with any of my scripts please use one of the following links:<p>
+<a href="mailto:quickscriptz@gmail.com">quickscriptz@gmail.com</a><br>
+<a href="http://www.quickscriptz.ca.kz" target="blank">www.quickscriptz.ca.kz</a><p>
+
+</center>
+</div>
+</div></div>
+<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+</body>
+</html>

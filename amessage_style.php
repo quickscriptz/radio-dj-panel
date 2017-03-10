@@ -1,0 +1,1 @@
+<font color="black"><b><i>Admin Says:</b></i></font> <?php require('amessage.php');?>

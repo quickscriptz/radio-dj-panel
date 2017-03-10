@@ -1,0 +1,57 @@
+/*****************************************
+        Import Generic Styles
+*****************************************/
+
+@import url("style_generic.css");
+
+
+
+/*****************************************
+        Custom Styles
+*****************************************/
+
+#header {
+background: url(images/styles/header.gif);
+width: 700px;
+height: 100px;
+}
+
+#amessage {
+padding-left: 10px;
+padding-right: 10px;
+background: url(images/styles/a_message.gif) no-repeat;
+width: 700px;
+height: 15px;
+}
+
+.title {
+background: url(images/styles/titles.gif);
+background-repeat: no-repeat;
+height: 20px;
+width: 150px;
+padding-top: 3px;
+padding-left: 5px;
+font-weight: bold;
+text-align: left;
+}
+
+#content {
+width: 700px;
+background: url(images/styles/repeat.gif) repeat-y;
+background-repeat: repeat-y;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom:10px;
+text-align: left;
+overflow: auto;
+min-height: 100%;
+}
+
+#footer {
+clear: both;
+margin: 0px auto;
+width: 700px;
+height: 20px;
+background: url(images/styles/footer.gif);
+text-align: center;
+}

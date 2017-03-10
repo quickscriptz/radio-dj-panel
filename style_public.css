@@ -1,0 +1,290 @@
+/*****************************************
+                        Generic Styles
+*****************************************/
+
+/*****************************************
+        Body And Centering Styles
+*****************************************/
+
+html, body {
+min-height: 100%;
+}
+
+body {
+background: transparent;
+background-attachment: fixed;
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+text-align: center;
+ scrollbar-face-color: #247EB8;
+ scrollbar-shadow-color: #000000;
+ scrollbar-highlight-color: #000000;
+ scrollbar-3dlight-color: #000000;
+ scrollbar-darkshadow-color: #000000;
+ scrollbar-arrow-color: #FFFFFF;
+ scrollbar-track-color: #13669B;
+}
+
+#center {
+width: 700px;
+min-height: 100%;
+margin: 0px auto;
+text-align: left;
+}
+
+.profile img {
+max-width:200px; 
+max-height:200px;
+visibility: visible;
+}
+
+
+
+/*****************************************
+        Navigation Menu Styles
+*****************************************/
+
+#menu {
+float: left;
+width: 150px;
+}
+
+#menucontents {
+margin: 0 0 0 0;
+padding: 0 0 0 10px;
+}
+
+#menu a:link {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#menu a:active {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#menu a:visited {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#menu a:hover {
+font-family: Verdana;
+font-size: 10px;
+font-weight: bold;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+
+
+/*****************************************
+        Main Content Styles
+*****************************************/
+
+#main {
+margin: 0 0 0 160px;
+width: 520px;
+}
+
+#main a:link {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#main a:active {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#main a:visited {
+font-family: Verdana;
+font-size: 10px;
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#main a:hover {
+font-family: Verdana;
+font-size: 10px;
+font-weight: bold;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+h1 {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+}
+
+#aboutranks {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+}
+
+
+
+
+/*****************************************
+        Blockquotes And Notifications
+*****************************************/
+
+blockquote {
+margin: 0px auto;
+padding-left: 50px;
+background-color: #2080BD;  
+background-repeat: no-repeat;
+background-position: 5px 50%;  
+height: 30px;
+width: 300px;
+border: solid 1px #000000;
+color: #FFFFFF;
+valign: middle;
+}
+
+blockquote.exclamation {
+background-image: url(images/exclamation.gif);
+}
+
+blockquote.delete {
+background-image: url(images/delete.gif);
+}
+
+
+
+
+/*****************************************
+        Table And Form Styles
+*****************************************/
+
+td, tr, table {
+font-family: Verdana;
+font-size: 10px;
+color: #FFFFFF;
+}
+
+textarea, select {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+border: solid 1px #000000;
+overflow: auto;
+}
+
+input {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+border: solid 1px #000000;
+}
+
+.normal {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+border: 0px;
+}
+
+
+
+
+
+
+/*****************************************
+        Timetable Styles
+*****************************************/
+
+#timetable {
+font-family: Verdana;
+font-size: 10px;
+color: #FFFFFF;
+}
+
+#timetable td {
+font-family: Verdana;
+font-size: 10px;
+color: #FFFFFF;
+}
+
+#timetable a {
+font-family: Verdana;
+font-size: 10px;
+color: #FFFFFF;
+font-weight: normal;
+}
+
+#timetable a:link {
+text-decoration: none;
+font-weight: normal;
+}
+
+#timetable a:visited {
+text-decoration: none;
+font-weight: normal;
+}
+
+#timetable a:active {
+text-decoration: none;
+font-weight: bold;
+}
+
+#timetable a:hover {
+text-decoration: none;
+font-weight: bold;
+color: #000000;
+}
+
+#timetable_pub {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+}
+
+#timetable_pub td {
+font-family: Verdana;
+font-size: 10px;
+color: #000000;
+}
+
+#timetable_pub a {
+font-family: Verdana;
+font-size: 10px;
+color: #0000FF;
+}
+
+#timetable_pub a:link {
+text-decoration: none;
+}
+
+#timetable_pub a:visited {
+text-decoration: none;
+}
+
+#timetable_pub a:active {
+text-decoration: none;
+}
+
+#timetable_pub a:hover {
+text-decoration: underline;
+color: #0000FF;
+}
