@@ -4,7 +4,7 @@
 
 The Radio DJ Panel is a tool designed to make running an internet radio station both easy and fun. It provides all of the functionality you'll need to manage your DJs while also keeping your listeners engaged and involved.
 
-**Latest Version:** [https://github.com/QuickScriptz/radio-dj-panel/releases/tag/v.3.1.0](v3.1.0)
+**Latest Version:** [v3.1.0](https://github.com/QuickScriptz/radio-dj-panel/releases/tag/v.3.1.0)
 
 **Demo:** http://demo.quickscriptz.ca/rdjp3/
 
@@ -31,8 +31,8 @@ The Radio DJ Panel is a tool designed to make running an internet radio station 
 
 ## Installation
 
-Refer to [INSTRUCTIONS.txt](INSTRUCTIONS.txt)
+Refer to [INSTRUCTIONS.txt]
 
 ## Changelog
 
-Refer to [CHANGELOG.txt](CHANGELOG.txt)
+Refer to [CHANGELOG.txt]
