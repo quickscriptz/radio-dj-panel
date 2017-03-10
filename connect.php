@@ -1,4 +1,4 @@
-<?
+<?php
 
 //set local variables
 $dbhost = "localhost"; //Database Host

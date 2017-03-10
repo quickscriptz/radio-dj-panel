@@ -17,11 +17,13 @@ session_unregister ('del_username');
 ?>
 
 <?php
-    $result = mysql_query("SELECT username FROM rp_users ORDER BY username ASC");
+    $result = mysql_query("SELECT username, rank FROM rp_users ORDER BY username ASC");
     echo '<select name="del_username">';
     while($row = mysql_fetch_assoc($result))
     {
-        echo '<option value="' . $row['username'] . '">' . $row['username'] . '</option>';
+        echo '<option value="' . $row['username'] . '">' . $row['username'];
+        if($row['rank'] == "Administrator"){echo ' (Admin)';}
+        echo '</option>';
     }
     echo '</select>';
 ?>

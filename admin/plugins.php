@@ -1,5 +1,28 @@
 <?php require('head.php');?>
 
-<?php $_F=__FILE__;$_X='Pz48P3BocA0KNGYoJF9TRVNTSU9OWydycF9yMW5rJ10gPT0gIkFkbTRuNHN0cjF0MnIiKSB7DQokZjRsNW4xbTUgPSAiaHR0cDovL3d3dy5xMzRja3NjcjRwdHouYzEvcjFkNDJkanAxbjVsX3BsM2c0bnMudHh0IjsNCiRoMW5kbDUgPSBmMnA1bigiJGY0bDVuMW01IiwgInIiKTsNCiRjMm50NW50cyA9ICcnOw0Kd2g0bDUgKCFmNTJmKCRoMW5kbDUpKSB7DQokYzJudDVudHMgLj0gZnI1MWQoJGgxbmRsNSwgODY5YSk7DQp9DQpmY2wyczUoJGgxbmRsNSk7DQokX2Q0djRkNSA9IDV4cGwyZDUoIiYiLCAkYzJudDVudHMpOw0KJF8xcnIxeSA9IDA7DQo1Y2gyICI8YzVudDVyPiI7DQp3aDRsNSgkX2Q0djRkNVskXzFycjF5XSAhPSAnJykNCnsNCmw0c3QoJF9odG1sKSA9IDV4cGwyZDUoIn4iLCAkX2Q0djRkNVskXzFycjF5XSk7DQo1Y2gyICIkX2h0bWwiOw0KJF8xcnIxeSsrOw0KfQ0KfQ0KPz4=';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php
+if($_SESSION['rp_rank'] == "Administrator") {
+	$filename = "http://www.quickscriptz.ca/radiodjpanel_plugins.txt";
+	$handle = @fopen("$filename", "r");
+	$contents = '';
+	if($handle){
+		while (!feof($handle)) {
+			$contents .= fread($handle, 8192);
+		}
+		fclose($handle);
+		$_divide = explode("&", $contents);
+		$_array = 0;
+		echo "<center>";
+		while($_divide[$_array] != '')
+		{
+			list($_html) = explode("~", $_divide[$_array]);
+			echo "$_html";
+			$_array++;
+		}
+	}else{
+		echo '<center><font size="2"><i>Unable to reach plugin server at this time.</i></font></center>';
+	}
+}
+?>
 
 <?php require('bottom.php');?>
