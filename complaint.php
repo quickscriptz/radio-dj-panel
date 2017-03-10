@@ -10,12 +10,16 @@
 <?php require('connect.php');
 require('functions.php');
 if($_POST['submit']) {
-$username = mysql_real_escape_string($_POST['name']);
-$email = mysql_real_escape_string($_POST['email']);
-$subject = mysql_real_escape_string($_POST['subject']);
-$message = mysql_real_escape_string($_POST['message']);
+$busername = mysql_real_escape_string($_POST['name']);
+$bemail = mysql_real_escape_string($_POST['email']);
+$bsubject = mysql_real_escape_string($_POST['subject']);
+$bmessage = mysql_real_escape_string($_POST['message']);
+$username = htmlentities($bname);
+$email = htmlentities($bemail);
+$subject = htmlentities($bsubject);
+$message = htmlentities($bmessage);
 $ipaddr = $_SERVER['REMOTE_ADDR'];
-if ($username==NULL|$email==NULL|$message==NULL){
+if ($busername==NULL|$bemail==NULL|$bmessage==NULL){
 echo "<p><h1><b>All fields are required.</b></h1><p>";
 }else{
 $query = "INSERT INTO rp_contact (username, email, subject, message, ipaddr) VALUES('$username','$email','$subject','$message','$ipaddr')";
