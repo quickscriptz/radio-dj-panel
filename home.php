@@ -9,15 +9,15 @@ you are a(n) <b><?php echo "$_SESSION[rp_rank]";?></b>.<p>
 var a = Math.random() + ""
 var rand1 = a.charAt(5)
 quotes = new Array
-quotes[1] = "Have you checked the <a href='servdetails.php'>server details</a> lately?";
-quotes[2] = "Feel like doing some <a href='staffchat.php'>chatting</a>?";
-quotes[3] = "Have you booked your <a href='timetable.php'>timeslot</a> yet this week?";
-quotes[4] = "Read up on the <a href='rules.php'>rules</a> lately?";
-quotes[5] = "Know what's happening lately? Why not check the <a href='news.php'>news</a>?";
-quotes[6] = "Checked your <a href='inbox.php'>inbox</a> recently?";
-quotes[7] = "Read up on the <a href='rules.php'>rules</a> lately?";
-quotes[8] = "Don't forget to <a href='editdjmessage.php'>update the dj says</a> before you dj!";
-quotes[9] = "The listener is usually right! Don't forget to <a href='checkrequests.php'>check the requests</a>!";
+quotes[1] = "Remember to double check the <a href='servdetails.php'>server details</a> before going live!";
+quotes[2] = "You can keep in touch with other DJ's via the <a href='staffchat.php'>staff chat</a>.";
+quotes[3] = "Remember to check the <a href='timetable.php'>timetable</a> often for changes!";
+quotes[4] = "Don't forget to read up on the <a href='rules.php'>rules</a> before DJ'ing!";
+quotes[5] = "Get the latest updates by checking the <a href='news.php'>news</a>!";
+quotes[6] = "You can send private messages to other DJ's from your <a href='inbox.php'>inbox</a>!";
+quotes[7] = "Send messages directly to listeners via the <a href='sendalert.php'>alerts</a> page!";
+quotes[8] = "Broadcast public messages using the <a href='editdjmessage.php'>dj says</a> when you're live!";
+quotes[9] = "Remember to keep your eyes tuned to the <a href='checkrequests.php'>requests page</a> while DJ'ing!";
 quotes[0] = "Feel like <a href='bannedsongs.php'>recommending</a> a song to be ban?";
 var quote = quotes[rand1]
 quote = quotes[rand1]
@@ -29,43 +29,34 @@ document.write("<i>" + quote + "</i>")
 // -- End Hiding Here -->
 </script><p><br><p>
 
-<?php 
+
+<?php
 if($_SESSION['rp_rank'] == "Administrator") {
-	$filename = 'install/'; 
-	if (file_exists($filename)) { 
-	echo "<blockquote class='delete'>We have detected that you have not yet deleted the install directory. Please do so before continuing.</blockquote><p>"; 
-	} else { 
-	} 
-	$filename = "http://www.quickscriptz.ca/radiodjpanel_update.txt";
-	$handle = @fopen("$filename", "r");
-	$contents = '';
-	if($handle){
-		while (!feof($handle)) {
-		$contents .= fread($handle, 8192);
+
+	// Check install folder
+	$install = 'install/'; 	
+	if(file_exists($install)){ 
+		echo "<blockquote class='delete'>We have detected that you have not yet deleted the install directory. Please do so before continuing.</blockquote><p>";
+	}
+
+	// Current panel version
+	$result = mysql_query("SELECT panel_version FROM rp_data");
+	while($row = mysql_fetch_assoc($result)){$v = $row['panel_version'];}
+
+	// Contact server
+	$filename = "http://rdjp.quickscriptz.ca/update.php?v=$v";
+	$do = @file_get_contents($filename);
+	if($do){
+		$parts = explode("||", $do);
+		if($parts[0] == "01"){
+			// Newer version
+			echo '<blockquote class="exclamation">There is a newer version of the Radio DJ Panel available for download! <a href="admin/update.php">Click here for more info</a>.</blockquote>';
+			echo $parts[1];
+			
 		}
-		fclose($handle);
-		$_divide = explode("&", $contents);
-		$_array = 0;
-		echo "<center>";
-		while($_divide[$_array] != ''){
-			$result = mysql_query("SELECT panel_version FROM rp_data") or die(mysql_error());
-			while($row = mysql_fetch_assoc($result)) {
-				$currentversion = $row['panel_version'];
-				list($_version, $_html, $_message) = explode("~", $_divide[$_array]);
-				if($_version != $currentversion|$_SESSION['rank'] == "Administrator"){
-					echo "<blockquote class='exclamation'>A newer version of the Radio DJ Panel is available for download. Click <a href='admin/update.php'>here</a> to update your panel.</blockquote>";
-				}
-				$_array++;
-				echo "</center>";
-			}
-		}
-	}else{
-		echo '<center><font size="2"><i>Unable to reach update server at this time.</i></font></center>';
 	}
 }
 ?>
-
-
 
 
 

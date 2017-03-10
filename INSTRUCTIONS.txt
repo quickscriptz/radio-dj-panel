@@ -1,0 +1,21 @@
+
++-----------------------------------------------+
+| Radio DJ Panel v3
++-----------------------------------------------+
+| New Installation Instructions
++-----------------------------------------------+
+
+1. Upload the contents of the "radiodjpanel" to your server
+
+2. Navigate to "http://yoursite.com/radiodjpanel/" in your web browser
+
+3. Follow the instructions to install the panel
+
+4. After installation, delete the "install" directory
+
+5. Navigate to "http://yoursite.com/radiodjpanel/README.php" for further
+   instructions on setting up the request line and dj message
+
+5. Start using your panel
+
+

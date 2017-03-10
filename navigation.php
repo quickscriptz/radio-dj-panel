@@ -16,14 +16,6 @@ while($row = mysql_fetch_assoc($result)) {
 echo "$row[panel_version]<br/>";
 }
 echo "<p></p>
-<div class='title'>Style</div><center>
-<select name='switchcontrol' size='1'
-onChange='chooseStyle(this.options[this.selectedIndex].value, 60)'>
-<option value='none' selected='selected'>Default Style</option>
-<option value='deep'>Deep Green</option>
-</select>
-</form></center>
-<p></p>
 <div class='title'>Radio</div>
 -<a href='home.php'>Home</a><br/>
 -<a href='news.php'>News</a><br/>
@@ -98,22 +90,3 @@ echo "<p></p><div class='title'>Head DJ Panel</div>
 -<a href='admin/suspenddjhead.php'>Suspend DJ</a><br/>
 -<a href='admin/unbansonghead.php'>Unban Song</a><br/>
 </div>";}?>
-
-<?php
-if($_SESSION['rp_rank'] == 'Suspended'){ 
-echo "<div class='title'>System</div>
-<b>IP: </b>"; 
-$ipaddr=$_SERVER['REMOTE_ADDR']; 
-echo "$ipaddr";
-echo "<br/><b>User: </b>";
-echo "$_SESSION[rp_username]";
-echo "<br/><b>Rank: </b>";
-echo "$_SESSION[rp_rank]";
-echo "<br/><b>Panel Version:</b> ";
-$result = mysql_query("SELECT panel_version FROM rp_data") or die(mysql_error());
-while($row = mysql_fetch_assoc($result)) { 
-echo "$row[panel_version]<br/>";
-}
-echo "<p></p>
-<div class='title'>Your Account</div>
--<a href='contact.php'>Dispute Suspension</a><br/>";}?>

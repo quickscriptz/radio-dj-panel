@@ -55,39 +55,71 @@
 <center>
 
 <b><u>Connect To Database</b></u><p>
-Please check that all the variables in the below textbox are set according to the database that you want to install this script on.<p>
+Please check that all the variables in the below fields are set according to the database that you want to install this script on.<p><br/>
 
 <?php
-$file = "../connect.php";
-if (!isset($_POST['submit']))
-{
-  $fo = fopen($file, "r");
-  $fr = fread($fo, filesize($file));
-  if ( get_magic_quotes_gpc () ) $fr = stripslashes($fr);
-  
-  $fr = str_replace("&", "&amp;", $fr);
-  $fr = str_replace("<", "&lt;", $fr);
-  $fr = str_replace(">", "&gt;", $fr);
-  
-  echo "<form method='post' action='{$_SERVER['PHP_SELF']}'>
-        <textarea name='newfile' rows='10' cols='60'>{$fr}</textarea>
-        <p>
-        <input type='submit' name='submit' value='Save' />
-        </form>";
-  fclose($fo);
+if($_POST['save']){
+	$host = $_POST['host'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$name = $_POST['name'];
+	if($host && $username && $password && $name){
+		$con = @mysql_connect($host,$username,$password); 
+		$db = @mysql_select_db($name, $con);
+		if($con && $db){
+$file="<?php
+"."$"."con"." = mysql_connect('$host', '$username', '$password');
+"."$"."dbs"." = mysql_select_db('$name', "."$"."con".");
+?>";
+			// Write connection info
+			$fp = fopen('../connect.php', 'w');
+			$fp1 = fwrite($fp, $file);
+			$fp2 = fclose($fp);
+			if($fp && $fp1 && $fp2){
+				echo "<h1>Connection Details Saved!</h1><p><br><p><form method='link' action='install4.php'><input type='submit' value='Continue!'></form>";
+			}else{
+				echo '<h1>An error occurred while attempting to write to configuration file.</h1>
+				You will now need to manually write your database connection file.<br/>
+				Please start by opening the "connect.php" file in your main "radiodjpanel" directory.<br/>
+				Once open, paste the following code into the file, then save it.<br/><br/><br/>
+				<textarea rows="4" cols="80"><?php
+$con = mysql_connect(\''.$host.'\', \''.$username.'\', \''.$password.'\');
+$dbs = mysql_select_db(\''.$name.'\', $con);
+?></textarea><br/><br/><br/><br/>
+				When finished, you may proceed.<br/><br/>
+				<form method="link" action="install4.php"><input type="submit" value="Continue"></form>';
+			}
+		}else{
+			echo '<h1>Unable to connect to database with information provided!</h1>';
+			echo '<h1>Verify you have all the correct details and try again!</h1>';
+			echo 'MySQL Server returned the following error:<br/>'.mysql_error().'<br/><br/><br/>';
+			$show = 1;
+		}
+	}else{
+		echo '<h1>Please fill in ALL fields!</h1><br/>';
+		$show = 1;
+	}
+}else{
+	$show = 1;
 }
-else
-{
-  $fo = fopen($file, "w");
-  $fw = fwrite($fo, (get_magic_quotes_gpc()?stripslashes($_POST['newfile']):$_POST['newfile']));
-  fclose($fo);
-echo "<center><h1>Connection Details Saved!</h1><p><br><p><form method='link' action='install3.5.php'><input type='submit' value='Lets Check The Connection'></form></center>";
+if($show == 1){
+	echo '<form method="POST">
+	MySQL Server Host:<br/>
+	<input type="text" name="host" value="'.$host.'"><br/><br/>
+	MySQL Database Username:<br/>
+	<input type="text" name="username" value="'.$username.'"><br/><br/>
+	MySQL Database Password:<br/>
+	<input type="text" name="password" value="'.$password.'"><br/><br/>
+	MySQL Database Name:<br/>
+	<input type="text" name="name" value="'.$name.'"><br/><br/>
+	<input type="submit" name="save" value="Save Details" />
+	</form>';
 }
 ?>
 
 </center>
 </div>
 </div></div>
-<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+<a href=http://www.quickscriptz.ca target=blank><div id=footer></div></div>
 </body>
 </html>

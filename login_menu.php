@@ -7,12 +7,7 @@ echo "$ipaddr";
 echo "<br/><b>User: </b>";
 echo "$_SESSION[rp_username]";
 echo "<br/><b>Rank: </b>";
-echo "$_SESSION[rp_rank]";
-echo "<br/><b>Panel Version:</b> ";
-$result = mysql_query("SELECT panel_version FROM rp_data") or die(mysql_error());
-while($row = mysql_fetch_assoc($result)) { 
-echo "$row[panel_version]<p></p>";
-}
+echo "$_SESSION[rp_rank] <p></p>";
 }
 ?>
 
@@ -29,7 +24,7 @@ echo "<div class='title'>Welcome</div>
 if($_SESSION['rp_rank'] == "Suspended"){
 echo "<div class='title'>Welcome</div>
 -<a href='contact_public.php'>Contact Admin</a><br/>
--<a href='logout2.php'>Logout</a>";
+-<a href='logout.php'>Logout</a>";
 }
 ?>
 </div>

@@ -1,5 +1,7 @@
 <?php require('check.php');?>
 
+<meta http-equiv="refresh" content="5">
+
 <link rel="stylesheet" type="text/css" href="style.css" />
 <body bgcolor="#2A9CD0">
 

@@ -1,1 +1,104 @@
-<?php $_F=__FILE__;$_X='Pz48P3BocCByNXEzNHI1KCdoNTFkLnBocCcpOz8+DQoNCjxjNW50NXI+DQoNCg0KPGI+PDM+WTIzciBJbmIyeDwvMz48LzM+PHA+DQo8ZjJybSBtNXRoMmQ9J1BPU1QnIDFjdDQybj0nNG5iMngucGhwJz4NCjw/cGhwDQogICAgJHI1czNsdCA9IG15c3FsX3EzNXJ5KCJTRUxFQ1QgNGQsIHQyZGosIGZyMm1kaiwgczNiajVjdCwgZDF0NSBGUk9NIHJwX3BtIFdIRVJFIHQyZGogPSAnJF9TRVNTSU9OW3JwXzNzNXJuMW01XScgT1JERVIgQlkgZDF0NSBERVNDIik7DQogICAgNWNoMiAnPGM1bnQ1cj48dDFibDUgdzRkdGg9InU3aXB4IiBiMnJkNXI9IjAiIDFsNGduPSJjNW50NXIiPjx0cj48dGQgMWw0Z249ImM1bnQ1ciI+PGI+IzwvYj48L3RkPjx0ZD48Yj5TM2JqNWN0PC9iPjwvdGQ+PHRkPjxiPkZyMm08L2I+PC90ZD48dGQ+PGI+UzVudDwvYj48L3RkPjwvdHI+JzsNCiAgICB3aDRsNSgkcjJ3ID0gbXlzcWxfZjV0Y2hfMXNzMmMoJHI1czNsdCkpDQogICAgew0KICAgICAgICA1Y2gyICc8dHI+PHRkIHc0ZHRoPSJhaXB4IiAxbDRnbj0iYzVudDVyIj48NG5wM3QgdHlwNT0iY2g1Y2tiMngiIGNsMXNzPSJuMnJtMWwiIG4xbTU9Im1zZzRkW10iIHYxbDM1PSInIC4gJHIyd1snNGQnXSAuICciPjwvdGQ+PHRkIHc0ZHRoPSI2aTBweCIgMWw0Z249Imw1ZnQiPicgLiAkcjJ3WydzM2JqNWN0J10gLiAnPC90ZD48dGQgdzRkdGg9IjZhaXB4Ij4nIC4gJHIyd1snZnIybWRqJ10gLiAnPC90ZD48dGQgdzRkdGg9IjY3aXB4IiAxbDRnbj0ibDVmdCI+JyAuICRyMndbJ2QxdDUnXSAuICc8L3RkPjwvdHI+JzsNCiAgICB9DQogICAgNWNoMiAnPC90MWJsNT48L2M1bnQ1cj4nOw0KPz4NCg0KPD9waHAgDQo0ZiAoJF9QT1NUWydkNWw1dDUnXSkgew0KJG1zZzRkXzFycjF5ID0gJF9QT1NUWydtc2c0ZCddOw0KNGYoJG1zZzRkXzFycjF5ID09ICIiKXsNCjVjaDIgIjxoNj5QbDUxczUgczVsNWN0IDEgbTVzczFnNSB0MiBkNWw1dDUuPC9oNj4iOw0KfTVsczV7DQpmMnI1MWNoKCRtc2c0ZF8xcnIxeSAxcyAkZDVsNGQpIHsNCiRyNXMzbHQgPSBteXNxbF9xMzVyeSgiREVMRVRFIEZST00gcnBfcG0gV0hFUkUgNGQgPSAnJGQ1bDRkJyIpIDJyIGQ0NShteXNxbF81cnIycigpKTsNCn0NCnByNG50ICI8cD48YzVudDVyPjxoNj5TNWw1Y3Q1ZCBNNXNzMWc1KHMpIEQ1bDV0NWQhPGJyPjwxIGhyNWY9JzRuYjJ4LnBocCc+UjVmcjVzaDwvMT48L2g2PjwvYzVudDVyPiI7DQp9DQp9DQo/Pg0KDQo8cD48NG5wM3QgdHlwNT0iczNibTR0IiBuMW01PSJ2NDV3IiB2MWwzNT0iVjQ1dyI+PDRucDN0IHR5cDU9InMzYm00dCIgbjFtNT0iZDVsNXQ1IiB2MWwzNT0iRDVsNXQ1Ij4NCjwvZjJybT4NCg0KPD9waHANCjRmICgkX1BPU1RbJ3Y0NXcnXSkgew0KJG1zZzRkXzFycjF5ID0gJF9QT1NUWydtc2c0ZCddOw0KNGYoJG1zZzRkXzFycjF5ID09ICIiKXsNCjVjaDIgIjxoNj5QbDUxczUgczVsNWN0IDEgbTVzczFnNSB0MiB2NDV3LjwvaDY+IjsNCn01bHM1ew0KZjJyNTFjaCgkbXNnNGRfMXJyMXkgMXMgJHY0NXc0ZCkNCiRyNXMzbHQgPSBteXNxbF9xMzVyeSgiU0VMRUNUIDRkLCB0MmRqLCBmcjJtZGosIGQxdDUsIHMzYmo1Y3QsIG01c3MxZzUgRlJPTSBycF9wbSBXSEVSRSA0ZCA9ICckdjQ1dzRkJyIpIDJyIGQ0NShteXNxbF81cnIycigpKTsNCjVjaDIgJzxwPjxocj48cD48dDFibDUgdzRkdGg9Im8wMHB4IiAxbDRnbj0iYzVudDVyIj4nOw0Kd2g0bDUoJHIydyA9IG15c3FsX2Y1dGNoXzFzczJjKCRyNXMzbHQpKSB7DQo1Y2gyICc8dHI+DQo8dGQgMWw0Z249Imw1ZnQiIHc0ZHRoPSJpMHB4Ij48Yj5GcjJtOjwvYj48L3RkPg0KPHRkIDFsNGduPSJsNWZ0IiB3NGR0aD0iYWkwcHgiPicgLiAkcjJ3WydmcjJtZGonXSAuICc8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCAxbDRnbj0ibDVmdCIgdzRkdGg9ImkwcHgiPjxiPlMzYmo1Y3Q6PC9iPjwvdGQ+DQo8dGQgMWw0Z249Imw1ZnQiIHc0ZHRoPSJhaTBweCI+JyAuICRyMndbJ3MzYmo1Y3QnXSAuICc8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCAxbDRnbj0ibDVmdCIgdzRkdGg9ImkwcHgiPjxiPlM1bnQ6PC9iPjwvdGQ+DQo8dGQgMWw0Z249Imw1ZnQiIHc0ZHRoPSJhaTBweCI+JyAuICRyMndbJ2QxdDUnXSAuICc8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCAxbDRnbj0ibDVmdCIgdzRkdGg9ImkwcHgiIHYxbDRnbj0idDJwIj48Yj5NNXNzMWc1OjwvYj48L3RkPg0KPHRkIDFsNGduPSJsNWZ0IiB3NGR0aD0iYWkwcHgiPicgLiAkcjJ3WydtNXNzMWc1J10gLiAnPC90ZD4NCjwvdHI+JzsNCjVjaDIgJzwvdDFibDU+PHA+DQo8ZjJybSBtNXRoMmQ9InAyc3QiIDFjdDQybj0iNG5iMngucGhwIj4NCjw0bnAzdCB0eXA1PSJoNGRkNW4iIG4xbTU9IjRkIiB2MWwzNT0iJyAuICRyMndbJzRkJ10gLiAnIj4NCjw0bnAzdCB0eXA1PSJzM2JtNHQiIG4xbTU9ImQ1bDV0NWEiIHYxbDM1PSJENWw1dDUiPg0KPC9mMnJtPic7DQp9DQp9DQp9DQo/Pg0KDQo8P3BocCANCjRmICgkX1BPU1RbJ2Q1bDV0NWEnXSkgew0KJGQ1bDRkID0gJF9QT1NUWyc0ZCddOw0KJHI1czNsdCA9IG15c3FsX3EzNXJ5KCJERUxFVEUgRlJPTSBycF9wbSBXSEVSRSA0ZCA9ICckZDVsNGQnIikgMnIgZDQ1KG15c3FsXzVycjJyKCkpOw0KcHI0bnQgIjxwPjxjNW50NXI+PGg2Pk01c3MxZzUgRDVsNXQ1ZDxicj48MSBocjVmPSc0bmIyeC5waHAnPlI1ZnI1c2g8LzE+PC9oNj48L2M1bnQ1cj4iOw0KfQ0KPz4NCg0KDQo8L2M1bnQ1cj4NCg0KPD9waHAgcjVxMzRyNSgnYjJ0dDJtLnBocCcpOz8+';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php require('head.php');?>
+
+<center>
+
+
+<b><u>Your Inbox</u></u><p>
+<form method='POST' action='inbox.php'>
+<?php
+    $result = mysql_query("SELECT id, todj, fromdj, subject, date FROM rp_pm WHERE todj = '$_SESSION[rp_username]' ORDER BY date DESC");
+    echo '<center><table width="475px" border="0" align="center"><tr><td align="center"><b>#</b></td><td><b>Subject</b></td><td><b>From</b></td><td><b>Sent</b></td></tr>';
+    while($row = mysql_fetch_assoc($result))
+    {
+        echo '<tr><td width="25px" align="center"><input type="checkbox" class="normal" name="msgid[]" value="' . $row['id'] . '"></td><td width="150px" align="left">' . $row['subject'] . '</td><td width="125px">' . $row['fromdj'] . '</td><td width="175px" align="left">' . $row['date'] . '</td></tr>';
+    }
+    echo '</table></center>';
+?>
+
+<?php 
+if ($_POST['delete']) {
+$msgid_array = $_POST['msgid'];
+if($msgid_array == ""){
+echo "<h1>Please select a message to delete.</h1>";
+}else{
+foreach($msgid_array as $delid) {
+$result = mysql_query("DELETE FROM rp_pm WHERE id = '$delid'") or die(mysql_error());
+}
+print "<p><center><h1>Selected Message(s) Deleted!<br><a href='inbox.php'>Refresh</a></h1></center>";
+}
+}
+?>
+
+<p><input type="submit" name="view" value="View"><input type="submit" name="delete" value="Delete">
+</form>
+
+<?php
+if ($_POST['view']) {
+$msgid_array = $_POST['msgid'];
+if($msgid_array == ""){
+echo "<h1>Please select a message to view.</h1>";
+}else{
+foreach($msgid_array as $viewid)
+$result = mysql_query("SELECT id, todj, fromdj, date, subject, message FROM rp_pm WHERE id = '$viewid'") or die(mysql_error());
+echo '<p><hr><p><table width="300px" align="center">';
+while($row = mysql_fetch_assoc($result)) {
+echo '<tr>
+<td align="left" width="50px"><b>From:</b></td>
+<td align="left" width="250px">' . $row['fromdj'] . '</td>
+</tr>
+<tr>
+<td align="left" width="50px"><b>Subject:</b></td>
+<td align="left" width="250px">' . $row['subject'] . '</td>
+</tr>
+<tr>
+<td align="left" width="50px"><b>Sent:</b></td>
+<td align="left" width="250px">' . $row['date'] . '</td>
+</tr>
+<tr>
+<td align="left" width="50px" valign="top"><b>Message:</b></td>
+<td align="left" width="250px">' . $row['message'] . '</td>
+</tr>';
+echo '</table><p>
+<form method="post" action="inbox.php">
+<input type="hidden" name="id" value="' . $row['id'] . '">
+<input type="hidden" name="replyto" value="' . $row['fromdj'] . '">';
+if(strstr($row['subject'], "RE:") != FALSE){
+	echo '<input type="hidden" name="replysub" value="' . $row['subject'] . '">';
+}else{
+	echo '<input type="hidden" name="replysub" value="RE: ' . $row['subject'] . '">';	
+}
+echo 'Your reply:<br/>
+<textarea rows="7" cols="45" name="replymsg"></textarea><br/><br/>
+<input type="submit" name="reply" value="Reply"> 
+<input type="submit" name="delete2" value="Delete">
+</form>';
+}
+}
+}
+?>
+
+<?php 
+if ($_POST['delete2']) {
+	$delid = $_POST['id'];
+	$result = mysql_query("DELETE FROM rp_pm WHERE id = '$delid'") or die(mysql_error());
+	print "<p><center><h1>Message Deleted<br><a href='inbox.php'>Refresh</a></h1></center>";
+}elseif($_POST['reply']){
+	$fromdj = $_SESSION['rp_username'];
+	$todj = $_POST['replyto'];
+	$subject = $_POST['replysub'];
+	$date = date("F j, Y, g:i a");
+	$message = $_POST['replymsg'];
+	if($message == ""){
+		echo "<p><hr><p><h1>Your reply was blank!</h1><a href='javascript:history.go(-1)'>Go Back</a>";
+	}else{
+		$query = "INSERT INTO rp_pm (fromdj, todj, date, subject, message) VALUES('$fromdj','$todj','$date','$subject','$message')";
+		mysql_query($query) or die(mysql_error());
+		echo "<p><hr><p><h1>Reply Sent!</h1><p>";
+	}
+}
+?>
+
+
+</center>
+
+<?php require('bottom.php');?>

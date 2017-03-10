@@ -55,7 +55,7 @@
 <center>
 
 <b><u>Checking File Permissions</b></u><p>
-Please check that all the files/folders listed below have the proper permissions. All files in red are not properly CHMOD'ed.<p></center>
+Please check that all the files/folders listed below have the proper permissions.<br/>All files in red are not properly CHMOD'ed.<p></center>
 
 <table width="100%"  border="0" cellspacing="0" cellpadding="3" style="text-align:center;">
          <tr>
@@ -85,15 +85,16 @@ function check_perms($path,$perm)
 ?>
 </table><p>
 
-<center><h1>-If You Don't Know How To CHMOD-<br><a href="http://www.wizcrafts.net/chmod.html" target="_blank">Learn How</a></center>
+<center><h1>-If You Don't Know How To CHMOD-<br><a href="http://php.about.com/od/phpbasics/ht/chmod.htm" target="_blank">Learn How</a></center>
 
 <p><br><p><center>
+<form method="link" action="install2.php"><input type="submit" id="submit" value="Refresh List"></form>
 <form method="link" action="install3.php"><input type="submit" id="submit" value="All The Files Permissions Are Set"></form>
 </center>
 
 </center>
 </div>
 </div></div>
-<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+<a href=http://www.quickscriptz.ca target=blank><div id=footer></div></div>
 </body>
 </html>

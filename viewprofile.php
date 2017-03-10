@@ -4,6 +4,44 @@
 
 <?php 
 language_filter($row);
-$_F=__FILE__;$_X='Pz48P3BocA0KJGRqbjFtNSA9ICRfR0VUWydkaiddOw0KNWNoMiAiPGI+PDM+REogJGRqbjFtNTwvYj48LzM+PHA+PC9jNW50NXI+IjsNCiRxMzVyeSA9IG15c3FsX3EzNXJ5KCJTRUxFQ1QgM3M1cm4xbTUsZGpuMW01LHIxbmssNW0xNGwsZjF2czJuZyxmMXZiMW5kLGYxdmYyMmQscDV0cDU1djVzLHMxeTRuZ3MsMWIyM3R5MjMsMXYxdDFyIEZST00gcnBfM3M1cnMgV0hFUkUgM3M1cm4xbTUgPSAnJGRqbjFtNSciKSAyciBkNDUobXlzcWxfNXJyMnIoKSk7DQokcjJ3ID0gbXlzcWxfZjV0Y2hfMXJyMXkoJHEzNXJ5KTsNCiRkam4xbTUgPSAkX0dFVFsnZGonXTsNCjVjaDIgJzxkNHYgMWw0Z249ImM1bnQ1ciI+PHQxYmw1IHc0ZHRoPSJpMDBweCIgYjJyZDVyPSIwIg0KPHRyPg0KPHRkIHc0ZHRoPSJvMDBweCIgdjFsNGduPSJ0MnAiPg0KPGYybnQgYzJsMnI9ImJsMWNrIj48Yj5VczVybjFtNTo8L2YybnQ+PC9iPiAnIC4gJHIyd1snM3M1cm4xbTUnXSAuICc8YnI+DQo8ZjJudCBjMmwycj0iYmwxY2siPjxiPkRKIE4xbTU6PC9mMm50PjwvYj4gJyAuICRyMndbJ2RqbjFtNSddIC4gJzxicj4NCjxmMm50IGMybDJyPSJibDFjayI+PGI+UjFuazo8L2YybnQ+PC9iPiAnIC4gJHIyd1sncjFuayddIC4gJzxwPg0KDQo8ZjJudCBjMmwycj0iYmwxY2siPjxiPkYxdjIzcjR0NSBTMm5nOjwvZjJudD48L2I+ICcgLiAkcjJ3WydmMXZzMm5nJ10gLiAnPGJyPg0KPGYybnQgYzJsMnI9ImJsMWNrIj48Yj5GMXYyM3I0dDUgQjFuZDo8L2YybnQ+PC9iPiAnIC4gJHIyd1snZjF2YjFuZCddIC4gJzxicj4NCjxmMm50IGMybDJyPSJibDFjayI+PGI+RjF2MjNyNHQ1IEYyMmQ6PC9mMm50PjwvYj4gJyAuICRyMndbJ2YxdmYyMmQnXSAuICc8YnI+DQo8ZjJudCBjMmwycj0iYmwxY2siPjxiPlA1dCBQNTV2NXM6PC9mMm50PjwvYj4gJyAuICRyMndbJ3A1dHA1NXY1cyddIC4gJzxicj4NCjxmMm50IGMybDJyPSJibDFjayI+PGI+UzF5NG5nczo8L2YybnQ+PC9iPiAnIC4gJHIyd1snczF5NG5ncyddIC4gJzxicj4NCjxmMm50IGMybDJyPSJibDFjayI+PGI+QWIyM3QgTTU6PC9mMm50PjwvYj4gJyAuICRyMndbJzFiMjN0eTIzJ10gLiAnDQo8L3RkPg0KPHRkIDFsNGduPSJjNW50NXIiIHc0ZHRoPSJhMDBweCI+JzsNCjRmKCRyMndbJzF2MXQxciddID09ICJOVUxMInwkcjJ3WycxdjF0MXInXSA9PSAiIil7DQo1Y2gyICc8NG1nIHNyYz0iNG0xZzVzL24yXzF2MXQxci5nNGYiIDFsdD0iTjIgQXYxdDFyIFM1dCIgdzRkdGg9ImEwIiBoNTRnaHQ9Im8wIj48L3RkPjwvdHI+PC90MWJsNT4nOw0KfTVsczV7DQokcDRjID0gZzV0NG0xZzVzNHo1KCIkcjJ3WzF2MXQxcl0iKTsgDQo0ZigkcDRjWzZdIDwgImEwMCJ8JHA0Y1swXSA8ICJhMDAiKXsNCjVjaDIgJzw0bWcgc3JjPSInLiRyMndbJzF2MXQxciddLiciIGNsMXNzPSJwcjJmNGw1Ij48L3RkPjwvdHI+PC90MWJsNT4nOw0KfTVsczV7DQokcDRjID0gZzV0NG0xZzVzNHo1KCIkcjJ3WzF2MXQxcl0iKTsgDQo0ZigkcDRjWzZdID4gImEwMCJ8JHA0Y1swXSA+ICJhMDAiKXsNCjVjaDIgJzw0bWcgc3JjPSInLiRyMndbJzF2MXQxciddLiciIGNsMXNzPSJwcjJmNGw1IiAxbHQ9Ik4yIEF2MXQxciBTNXQiIG0xeC1oNTRnaHQ9ImEwMCIgbTF4LXc0ZHRoPSJhMDAiJzsNCjVjaDIgNG0xZzVSNXM0ejUoJHA0Y1swXSwNCiRwNGNbNl0sIGEwMCk7DQo1Y2gyICc+PC90ZD4NCjwvdHI+DQo8L3QxYmw1Pic7DQp9DQp9DQp9DQo/Pg==';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+$djname = $_GET['dj'];
+echo "<b><u>DJ $djname</b></u><p></center>";
+$query = mysql_query("SELECT username,djname,rank,email,favsong,favband,favfood,petpeeves,sayings,aboutyou,avatar FROM rp_users WHERE username = '$djname'") or die(mysql_error());
+$row = mysql_fetch_array($query);
+$djname = $_GET['dj'];
+echo '<div align="center"><table width="500px" border="0"
+<tr>
+<td width="300px" valign="top">
+<font color="black"><b>Username:</font></b> ' . $row['username'] . '<br>
+<font color="black"><b>DJ Name:</font></b> ' . $row['djname'] . '<br>
+<font color="black"><b>Rank:</font></b> ' . $row['rank'] . '<p>
+
+<font color="black"><b>Favourite Song:</font></b> ' . $row['favsong'] . '<br>
+<font color="black"><b>Favourite Band:</font></b> ' . $row['favband'] . '<br>
+<font color="black"><b>Favourite Food:</font></b> ' . $row['favfood'] . '<br>
+<font color="black"><b>Pet Peeves:</font></b> ' . $row['petpeeves'] . '<br>
+<font color="black"><b>Sayings:</font></b> ' . $row['sayings'] . '<br>
+<font color="black"><b>About Me:</font></b> ' . $row['aboutyou'] . '
+</td>
+<td align="center" width="200px">';
+if($row['avatar'] == "NULL"|$row['avatar'] == ""){
+echo '<img src="images/no_avatar.gif" alt="No Avatar Set" width="20" height="30"></td></tr></table>';
+}else{
+$pic = getimagesize("$row[avatar]"); 
+if($pic[1] < "200"|$pic[0] < "200"){
+echo '<img src="'.$row['avatar'].'" class="profile"></td></tr></table>';
+}else{
+$pic = getimagesize("$row[avatar]"); 
+if($pic[1] > "200"|$pic[0] > "200"){
+echo '<img src="'.$row['avatar'].'" class="profile" alt="No Avatar Set" max-height="200" max-width="200"';
+echo imageResize($pic[0],
+$pic[1], 200);
+echo '></td>
+</tr>
+</table>';
+}
+}
+}
+?>
 
 <?php require('bottom.php');?>

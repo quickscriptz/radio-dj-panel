@@ -1,0 +1,33 @@
+
++-----------------------------------------------+
+| Radio DJ Panel v3
++-----------------------------------------------+
+| Changelog/What's New
++-----------------------------------------------+
+
+The following features have been added/changed/modified in the v3.1.0
+release of the Radio DJ Panel script by QuickScriptz Design.
+
+
+Legend:
+(-) removed
+(+) added
+(>) modified
+
+
+- Style changer select box has been removed
+> Generic/overall stylesheets cleaned up
+> New installations now use the mysql_connect() function
++ License and readme contents are now hosted remotely
++ Staff chat now automatically refreshes
++ Ability to reply inline to new PM's
+- Logout "double-check" removed (you can now logout with a single click)
++ Disallow editing/deleting/suspending of Root Admin account
+> Updated account suspension page
+> Updated backend code for the timetable (bug fixes)
++ Allow for deletion of individual requests
+- Removed "BETA" in admin area header
+> Allow use of HTML in news articles (bug fix for encoding)
+> Simplified new installations
+> Various input cleaning fixes/upgrades
+> Updated home screen rotating messages

@@ -1,1 +1,0 @@
-Welcome <b><?php echo "$_SESSION[username]";?></b>,<br>you are a(n) <b><?php echo "$_SESSION[rank]";?></b><p>

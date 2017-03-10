@@ -59,33 +59,35 @@
 Now it is time to configure the panel to fit your site! So go ahead and input the appropriate details below.<p>
 
 <?php
-if (!isset($_POST['submit'])) {
-echo '<form method="POST" action="install5.php">
-Site Name:<br>
-<input type="text" size="25" maxlenght="30" name="nsitename"><p>
-Admin Email:<br>
-<input type="text" size="45" maxlenght="30" name="nadminemail"><p>
-Radio Server Address:<br>
-<input type="text" size="45" maxlenght="50" name="nserveraddr"><p>
-Radio Server Port:<br>
-<input type="text" size="25" maxlenght="10" name="nserverport"><p>
-Radio Server Password:<br>
-<input type="text" size="25" maxlenght="30" name="nserverpass"><p>
-<h1>-Only Submit This Form Once Or You Will Get Errors-</h1><p>
-<input type="submit" name="submit" value="Configure">
-</form>';
-} else {
-$nsitename = $_POST[nsitename];
-$nadminemail = $_POST[nadminemail];
-$nserveraddr = $_POST[nserveraddr];
-$nserverport = $_POST[nserverport];
-$nserverpass = $_POST[nserverpass];
-$npanelversion = '3.0.3';
-if ($_POST['submit']) {
-$result = mysql_query("INSERT INTO rp_data SET sitename = '$nsitename', adminemail = '$nadminemail', serveraddr = '$nserveraddr', serverport = '$nserverport', serverpass = '$nserverpass', panel_version = '$npanelversion'") or die(mysql_error());
-echo '<center><h1>Configuration Saved!</h1></center><p><br><p>
-<form method="link" action="install6.php"><input type="submit" value="Finished Configuration"></form>';
-}
+$cnt = mysql_query("SELECT * FROM rp_data");
+$num = mysql_num_rows($cnt);
+if (!$_POST['save'] && $num == 0) {
+	echo '<form method="POST" action="install5.php">
+	Site Name:<br>
+	<input type="text" size="25" maxlenght="30" name="nsitename"><p>
+	Admin Email:<br>
+	<input type="text" size="45" maxlenght="30" name="nadminemail"><p>
+	Radio Server Address:<br>
+	<input type="text" size="45" maxlenght="50" name="nserveraddr"><p>
+	Radio Server Port:<br>
+	<input type="text" size="25" maxlenght="10" name="nserverport"><p>
+	Radio Server Password:<br>
+	<input type="text" size="25" maxlenght="30" name="nserverpass"><p>
+	<h1>-Only Submit This Form Once Or You Will Get Errors-</h1><p>
+	<input type="submit" name="save" value="Configure">
+	</form>';
+}elseif($_POST['save'] && $num == 0){
+	$nsitename = $_POST[nsitename];
+	$nadminemail = $_POST[nadminemail];
+	$nserveraddr = $_POST[nserveraddr];
+	$nserverport = $_POST[nserverport];
+	$nserverpass = $_POST[nserverpass];
+	$npanelversion = '3.1.0';
+	$result = mysql_query("INSERT INTO rp_data SET sitename = '$nsitename', adminemail = '$nadminemail', serveraddr = '$nserveraddr', serverport = '$nserverport', serverpass = '$nserverpass', panel_version = '$npanelversion'") or die(mysql_error());
+	echo '<center><h1>Configuration Saved!</h1></center><p><br><p>
+	<form method="link" action="install6.php"><input type="submit" value="Finished Configuration"></form>';
+}elseif($num != 0){
+	echo "<h1>Panel Already Configured!</h1><p><br><p><form method='link' action='install6.php'><input type='submit' value='Continue!'></form>";
 }
 ?>
 
@@ -93,7 +95,7 @@ echo '<center><h1>Configuration Saved!</h1></center><p><br><p>
 </center>
 </div>
 </div></div>
-<a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
+<a href=http://www.quickscriptz.ca target=blank><div id=footer></div></div>
 </body>
 </html>
 
