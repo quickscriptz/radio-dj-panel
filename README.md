@@ -8,7 +8,7 @@ The Radio DJ Panel is a tool designed to make running an internet radio station 
 
 **Demo:** http://demo.quickscriptz.ca/rdjp3/
 
-**:linked_paperclips: Downloads:** http://download.quickscriptz.ca/radiodjpanel/
+**Downloads:** http://download.quickscriptz.ca/radiodjpanel/
 
 ## System Requirements
 
@@ -31,8 +31,8 @@ The Radio DJ Panel is a tool designed to make running an internet radio station 
 
 ## Installation
 
-Refer to [INSTRUCTIONS.txt]
+Refer to [INSTRUCTIONS.txt](INSTRUCTIONS.txt)
 
 ## Changelog
 
-Refer to [CHANGELOG.txt]
+Refer to [CHANGELOG.txt](CHANGELOG.txt)
