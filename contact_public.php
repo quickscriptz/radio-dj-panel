@@ -54,7 +54,7 @@ $subject = mysql_real_escape_string($_POST['subject']);
 $message = mysql_real_escape_string($_POST['message']);
 $ipaddr = $_SERVER['REMOTE_ADDR'];
 if($_POST['contact']) {
-if($_POST['fname'] != 'NULL'|$_POST['email'] != 'NULL'|$_POST['subject'] != 'NULL'|$_POST['message'] != 'NULL') {
+if($_POST['fname'] == ""|$_POST['email'] == ""|$_POST['message'] == "") {
 echo "<h1>All fields are required.<br><a href='javascript:history.back()'>Go Back</a></h1>";
 } else {
 $query = "INSERT INTO rp_contact (username, email, subject, message, ipaddr) VALUES('$username','$email','$subject','$message','$ipaddr')";

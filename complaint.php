@@ -13,7 +13,7 @@ if($_POST['submit']) {
 $username = mysql_real_escape_string($_POST['name']);
 $email = mysql_real_escape_string($_POST['email']);
 $subject = mysql_real_escape_string($_POST['subject']);
-$message = $mysql_real_escape_string($_POST['message']);
+$message = mysql_real_escape_string($_POST['message']);
 $ipaddr = $_SERVER['REMOTE_ADDR'];
 if ($username==NULL|$email==NULL|$message==NULL){
 echo "<p><h1><b>All fields are required.</b></h1><p>";

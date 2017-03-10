@@ -72,7 +72,7 @@ Radio Server Port:<br>
 Radio Server Password:<br>
 <input type="text" size="25" maxlenght="30" name="nserverpass"><p>
 <h1>-Only Submit This Form Once Or You Will Get Errors-</h1><p>
-<input type="hidden" size="10" maxlenght="10" name="npanelversion" value="3.0.0">
+<input type="hidden" size="10" maxlenght="10" name="npanelversion" value="3.0.1">
 <input type="submit" name="submit" value="Configure">
 </form>';
 } else {
