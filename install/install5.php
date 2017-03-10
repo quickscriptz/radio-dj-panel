@@ -72,7 +72,6 @@ Radio Server Port:<br>
 Radio Server Password:<br>
 <input type="text" size="25" maxlenght="30" name="nserverpass"><p>
 <h1>-Only Submit This Form Once Or You Will Get Errors-</h1><p>
-<input type="hidden" size="10" maxlenght="10" name="npanelversion" value="3.0.1">
 <input type="submit" name="submit" value="Configure">
 </form>';
 } else {
@@ -81,7 +80,7 @@ $nadminemail = $_POST[nadminemail];
 $nserveraddr = $_POST[nserveraddr];
 $nserverport = $_POST[nserverport];
 $nserverpass = $_POST[nserverpass];
-$npanelversion = $_POST[npanelversion];
+$npanelversion = '3.0.3';
 if ($_POST['submit']) {
 $result = mysql_query("INSERT INTO rp_data SET sitename = '$nsitename', adminemail = '$nadminemail', serveraddr = '$nserveraddr', serverport = '$nserverport', serverpass = '$nserverpass', panel_version = '$npanelversion'") or die(mysql_error());
 echo '<center><h1>Configuration Saved!</h1></center><p><br><p>
@@ -97,7 +96,6 @@ echo '<center><h1>Configuration Saved!</h1></center><p><br><p>
 <a href=http://www.quickscriptz.ca.kz target=blank><div id=footer></div></div>
 </body>
 </html>
-
 
 
 

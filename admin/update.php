@@ -1,5 +1,41 @@
 <?php require('head.php');?>
 
-<?php $_F=__FILE__;$_X='Pz48P3BocA0KNGYoJF9TRVNTSU9OWydycF9yMW5rJ10gPT0gIkFkbTRuNHN0cjF0MnIiKSB7DQokZjRsNW4xbTUgPSAiaHR0cDovL3d3dy5xMzRja3NjcjRwdHouYzEvcjFkNDJkanAxbjVsXzNwZDF0NS50eHQiOw0KJGgxbmRsNSA9IGYycDVuKCIkZjRsNW4xbTUiLCAiciIpOw0KJGMybnQ1bnRzID0gJyc7DQp3aDRsNSAoIWY1MmYoJGgxbmRsNSkpIHsNCiRjMm50NW50cyAuPSBmcjUxZCgkaDFuZGw1LCA4NjlhKTsNCn0NCmZjbDJzNSgkaDFuZGw1KTsNCiRfZDR2NGQ1ID0gNXhwbDJkNSgiJiIsICRjMm50NW50cyk7DQokXzFycjF5ID0gMDsNCjVjaDIgIjxjNW50NXI+IjsNCndoNGw1KCRfZDR2NGQ1WyRfMXJyMXldICE9ICcnKQ0Kew0KJHI1czNsdCA9IG15c3FsX3EzNXJ5KCJTRUxFQ1QgcDFuNWxfdjVyczQybiBGUk9NIHJwX2QxdDEiKSAyciBkNDUobXlzcWxfNXJyMnIoKSk7DQp3aDRsNSgkcjJ3ID0gbXlzcWxfZjV0Y2hfMXNzMmMoJHI1czNsdCkpIHsNCiRjM3JyNW50djVyczQybiA9ICRyMndbJ3AxbjVsX3Y1cnM0Mm4nXTsNCmw0c3QoJF92NXJzNDJuLCAkX2h0bWwsICRfbTVzczFnNSkgPSA1eHBsMmQ1KCJ+IiwgJF9kNHY0ZDVbJF8xcnIxeV0pOw0KNGYoJF92NXJzNDJuICE9ICRjM3JyNW50djVyczQybil7DQo1Y2gyICI8YzVudDVyPjxiPjwzPlIxZDQyIERKIFAxbjVsIEEzdDItVXBkMXQ1cjwvMz48L2I+PHA+IjsNCjVjaDIgIjxibDJja3EzMnQ1IGNsMXNzPSc1eGNsMW0xdDQybic+IjsNCjVjaDIgJF9tNXNzMWc1Ow0KNWNoMiAiPC9ibDJja3EzMnQ1PiI7DQo1Y2gyICIkX2h0bWwiOw0KJF8xcnIxeSsrOw0KfSA1bHM1NGYoJF92NXJzNDJuID09ICRjM3JyNW50djVyczQybikgew0KNWNoMiAiPGI+PDM+UjFkNDIgREogUDFuNWwgQTN0Mi1VcGQxdDU8LzM+PC9iPjxwPjxibDJja3EzMnQ1IGNsMXNzPSc1eGNsMW0xdDQybic+WTIzciBwMW41bCA0cyBjM3JyNW50bHkgM3AgdDIgZDF0NSAxbmQgM3M0bmcgdGg1IGwxdDVzdCB2NXJzNDJuIDJmIDIzciBkaiBwMW41bCBzY3I0cHQuPC9ibDJja3EzMnQ1PiI7DQokXzFycjF5Kys7DQp9DQp9DQp9DQp9DQo/Pg==';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<?php
+if($_SESSION['rp_rank'] == "Administrator") {
+	$filename = "http://www.quickscriptz.ca/radiodjpanel_update.txt";
+	$handle = @fopen("$filename", "r");
+	$contents = '';
+	if($handle){
+		while (!feof($handle)) {
+			$contents .= fread($handle, 8192);
+		}
+		fclose($handle);
+		$_divide = explode("&", $contents);
+		$_array = 0;
+		echo "<center>";
+		while($_divide[$_array] != '')
+		{
+			$result = mysql_query("SELECT panel_version FROM rp_data") or die(mysql_error());
+			while($row = mysql_fetch_assoc($result)) {
+				$currentversion = $row['panel_version'];
+				list($_version, $_html, $_message) = explode("~", $_divide[$_array]);
+				if($_version != $currentversion){
+					echo "<center><b><u>Radio DJ Panel Auto-Updater</u></b><p>";
+					echo "<blockquote class='exclamation'>";
+					echo $_message;
+					echo "</blockquote>";
+					echo "$_html";
+					$_array++;
+				} elseif($_version == $currentversion) {
+				echo "<b><u>Radio DJ Panel Auto-Update</u></b><p><blockquote class='exclamation'>Your panel is currently up to date and using the latest version of our dj panel script.</blockquote>";
+				$_array++;
+				}
+			}
+		}
+	}else{
+		echo '<center><font size="2"><i>Unable to reach update server at this time.</i></font></center>';
+	}
+}
+?>
 
 <?php require('bottom.php');?>

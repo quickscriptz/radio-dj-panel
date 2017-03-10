@@ -4,7 +4,70 @@
 Welcome <b>DJ <?php echo "$_SESSION[rp_username]";?></b>,<br/>
 you are a(n) <b><?php echo "$_SESSION[rp_rank]";?></b>.<p>
 
-<?php $_F=__FILE__;$_X='Pz48c2NyNHB0IGwxbmczMWc1PSJKMXYxU2NyNHB0Ij4NCjwhLS0gSDRkNSBmcjJtIDJsZCBicjJ3czVycw0KdjFyIDEgPSBNMXRoLnIxbmQybSgpICsgIiINCnYxciByMW5kNiA9IDEuY2gxckF0KGkpDQpxMzJ0NXMgPSBuNXcgQXJyMXkNCnEzMnQ1c1s2XSA9ICJIMXY1IHkyMyBjaDVjazVkIHRoNSA8MSBocjVmPSdzNXJ2ZDV0MTRscy5waHAnPnM1cnY1ciBkNXQxNGxzPC8xPiBsMXQ1bHk/IjsNCnEzMnQ1c1thXSA9ICJGNTVsIGw0azUgZDI0bmcgczJtNSA8MSBocjVmPSdzdDFmZmNoMXQucGhwJz5jaDF0dDRuZzwvMT4/IjsNCnEzMnQ1c1tvXSA9ICJIMXY1IHkyMyBiMjJrNWQgeTIzciA8MSBocjVmPSd0NG01dDFibDUucGhwJz50NG01c2wydDwvMT4geTV0IHRoNHMgdzU1az8iOw0KcTMydDVzW3VdID0gIlI1MWQgM3AgMm4gdGg1IDwxIGhyNWY9J3IzbDVzLnBocCc+cjNsNXM8LzE+IGwxdDVseT8iOw0KcTMydDVzW2ldID0gIktuMncgd2gxdCdzIGgxcHA1bjRuZyBsMXQ1bHk/IFdoeSBuMnQgY2g1Y2sgdGg1IDwxIGhyNWY9J241d3MucGhwJz5uNXdzPC8xPj8iOw0KcTMydDVzW2VdID0gIkNoNWNrNWQgeTIzciA8MSBocjVmPSc0bmIyeC5waHAnPjRuYjJ4PC8xPiByNWM1bnRseT8iOw0KcTMydDVzWzddID0gIlI1MWQgM3AgMm4gdGg1IDwxIGhyNWY9J3IzbDVzLnBocCc+cjNsNXM8LzE+IGwxdDVseT8iOw0KcTMydDVzWzhdID0gIkQybid0IGYycmc1dCB0MiA8MSBocjVmPSc1ZDR0ZGptNXNzMWc1LnBocCc+M3BkMXQ1IHRoNSBkaiBzMXlzPC8xPiBiNWYycjUgeTIzIA0KDQpkaiEiOw0KcTMydDVzWzldID0gIlRoNSBsNHN0NW41ciA0cyAzczMxbGx5IHI0Z2h0ISBEMm4ndCBmMnJnNXQgdDIgPDEgDQoNCmhyNWY9J2NoNWNrcjVxMzVzdHMucGhwJz5jaDVjayB0aDUgcjVxMzVzdHM8LzE+ISI7DQpxMzJ0NXNbMF0gPSAiRjU1bCBsNGs1IDwxIGhyNWY9J2Ixbm41ZHMybmdzLnBocCc+cjVjMm1tNW5kNG5nPC8xPiAxIHMybmcgdDIgYjUgYjFuPyI7DQp2MXIgcTMydDUgPSBxMzJ0NXNbcjFuZDZdDQpxMzJ0NSA9IHEzMnQ1c1tyMW5kNl0NCi8vIC0tIEVuZCBINGQ0bmcgSDVyNSAtLT4NCjwvc2NyNHB0Pg0KPHNjcjRwdCBsMW5nMzFnNT0iSjF2MVNjcjRwdCI+DQo8IS0tIEg0ZDUgdGg0cyBzY3I0cHQgZnIybSAybGQgYnIyd3M1cnMgLS0NCmQyYzNtNW50LndyNHQ1KCI8ND4iICsgcTMydDUgKyAiPC80PiIpDQovLyAtLSBFbmQgSDRkNG5nIEg1cjUgLS0+DQo8L3NjcjRwdD48cD48YnI+PHA+DQo8P3BocCANCjRmKCRfU0VTU0lPTlsncnBfcjFuayddID09ICJBZG00bjRzdHIxdDJyIikgew0KJGY0bDVuMW01ID0gJzRuc3QxbGwvJzsgDQo0ZiAoZjRsNV81eDRzdHMoJGY0bDVuMW01KSkgeyANCjVjaDIgIjxibDJja3EzMnQ1IGNsMXNzPSdkNWw1dDUnPlc1IGgxdjUgZDV0NWN0NWQgdGgxdCB5MjMgaDF2NSBuMnQgeTV0IGQ1bDV0NWQgdGg1IDRuc3QxbGwgDQoNCmQ0cjVjdDJyeS4gUGw1MXM1IGQyIHMyIGI1ZjJyNSBjMm50NG4zNG5nLjwvYmwyY2txMzJ0NT48cD4iOyANCn0gNWxzNSB7IA0KfSANCiRmNGw1bjFtNSA9ICJodHRwOi8vd3d3LnEzNGNrc2NyNHB0ei5jMS9yMWQ0MmRqcDFuNWxfM3BkMXQ1LnR4dCI7DQokaDFuZGw1ID0gZjJwNW4oIiRmNGw1bjFtNSIsICJyIik7DQokYzJudDVudHMgPSAnJzsNCndoNGw1ICghZjUyZigkaDFuZGw1KSkgew0KJGMybnQ1bnRzIC49IGZyNTFkKCRoMW5kbDUsIDg2OWEpOw0KfQ0KZmNsMnM1KCRoMW5kbDUpOw0KJF9kNHY0ZDUgPSA1eHBsMmQ1KCImIiwgJGMybnQ1bnRzKTsNCiRfMXJyMXkgPSAwOw0KNWNoMiAiPGM1bnQ1cj4iOw0Kd2g0bDUoJF9kNHY0ZDVbJF8xcnIxeV0gIT0gJycpDQp7DQokcjVzM2x0ID0gbXlzcWxfcTM1cnkoIlNFTEVDVCBwMW41bF92NXJzNDJuIEZST00gcnBfZDF0MSIpIDJyIGQ0NShteXNxbF81cnIycigpKTsNCndoNGw1KCRyMncgPSBteXNxbF9mNXRjaF8xc3MyYygkcjVzM2x0KSkgew0KJGMzcnI1bnR2NXJzNDJuID0gJHIyd1sncDFuNWxfdjVyczQybiddOw0KbDRzdCgkX3Y1cnM0Mm4sICRfaHRtbCwgJF9tNXNzMWc1KSA9IDV4cGwyZDUoIn4iLCAkX2Q0djRkNVskXzFycjF5XSk7DQo0ZigkX3Y1cnM0Mm4gIT0gJGMzcnI1bnR2NXJzNDJufCRfU0VTU0lPTlsncjFuayddID09ICJBZG00bjRzdHIxdDJyIil7DQo1Y2gyICI8YmwyY2txMzJ0NSBjbDFzcz0nNXhjbDFtMXQ0Mm4nPkEgbjV3NXIgdjVyczQybiAyZiB0aDUgUjFkNDIgREogUDFuNWwgNHMgMXYxNGwxYmw1IGYyciANCg0KZDJ3bmwyMWQuIENsNGNrIDwxIGhyNWY9JzFkbTRuLzNwZDF0NS5waHAnPmg1cjU8LzE+IHQyIDNwZDF0NSB5MjNyIHAxbjVsLjwvYmwyY2txMzJ0NT4iOw0KfQ0KJF8xcnIxeSsrOw0KNWNoMiAiPC9jNW50NXI+IjsNCn0NCn0NCn0NCj8+';eval(base64_decode('JF9YPWJhc2U2NF9kZWNvZGUoJF9YKTskX1g9c3RydHIoJF9YLCcxMjM0NTZhb3VpZScsJ2FvdWllMTIzNDU2Jyk7JF9SPWVyZWdfcmVwbGFjZSgnX19GSUxFX18nLCInIi4kX0YuIiciLCRfWCk7ZXZhbCgkX1IpOyRfUj0wOyRfWD0wOw=='));?>
+<script language="JavaScript">
+<!-- Hide from old browsers
+var a = Math.random() + ""
+var rand1 = a.charAt(5)
+quotes = new Array
+quotes[1] = "Have you checked the <a href='servdetails.php'>server details</a> lately?";
+quotes[2] = "Feel like doing some <a href='staffchat.php'>chatting</a>?";
+quotes[3] = "Have you booked your <a href='timetable.php'>timeslot</a> yet this week?";
+quotes[4] = "Read up on the <a href='rules.php'>rules</a> lately?";
+quotes[5] = "Know what's happening lately? Why not check the <a href='news.php'>news</a>?";
+quotes[6] = "Checked your <a href='inbox.php'>inbox</a> recently?";
+quotes[7] = "Read up on the <a href='rules.php'>rules</a> lately?";
+quotes[8] = "Don't forget to <a href='editdjmessage.php'>update the dj says</a> before you dj!";
+quotes[9] = "The listener is usually right! Don't forget to <a href='checkrequests.php'>check the requests</a>!";
+quotes[0] = "Feel like <a href='bannedsongs.php'>recommending</a> a song to be ban?";
+var quote = quotes[rand1]
+quote = quotes[rand1]
+// -- End Hiding Here -->
+</script>
+<script language="JavaScript">
+<!-- Hide this script from old browsers --
+document.write("<i>" + quote + "</i>")
+// -- End Hiding Here -->
+</script><p><br><p>
+
+<?php 
+if($_SESSION['rp_rank'] == "Administrator") {
+	$filename = 'install/'; 
+	if (file_exists($filename)) { 
+	echo "<blockquote class='delete'>We have detected that you have not yet deleted the install directory. Please do so before continuing.</blockquote><p>"; 
+	} else { 
+	} 
+	$filename = "http://www.quickscriptz.ca/radiodjpanel_update.txt";
+	$handle = @fopen("$filename", "r");
+	$contents = '';
+	if($handle){
+		while (!feof($handle)) {
+		$contents .= fread($handle, 8192);
+		}
+		fclose($handle);
+		$_divide = explode("&", $contents);
+		$_array = 0;
+		echo "<center>";
+		while($_divide[$_array] != ''){
+			$result = mysql_query("SELECT panel_version FROM rp_data") or die(mysql_error());
+			while($row = mysql_fetch_assoc($result)) {
+				$currentversion = $row['panel_version'];
+				list($_version, $_html, $_message) = explode("~", $_divide[$_array]);
+				if($_version != $currentversion|$_SESSION['rank'] == "Administrator"){
+					echo "<blockquote class='exclamation'>A newer version of the Radio DJ Panel is available for download. Click <a href='admin/update.php'>here</a> to update your panel.</blockquote>";
+				}
+				$_array++;
+				echo "</center>";
+			}
+		}
+	}else{
+		echo '<center><font size="2"><i>Unable to reach update server at this time.</i></font></center>';
+	}
+}
+?>
+
+
+
+
 
 </center>
 <?php require('bottom.php');?>
