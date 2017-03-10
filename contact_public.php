@@ -48,10 +48,14 @@ Email:<br>
 <input type='submit' name='contact' value='Send'>
 </form>";
 } else {
-$username = mysql_real_escape_string($_POST['fname']);
-$email = mysql_real_escape_string($_POST['email']);
-$subject = mysql_real_escape_string($_POST['subject']);
-$message = mysql_real_escape_string($_POST['message']);
+$busername = mysql_real_escape_string($_POST['fname']);
+$bemail = mysql_real_escape_string($_POST['email']);
+$bsubject = mysql_real_escape_string($_POST['subject']);
+$bmessage = mysql_real_escape_string($_POST['message']);
+$username = htmlentities($busername);
+$email = htmlentities($bemail);
+$subject = htmlentities($bsubject);
+$message = htmlentities($bmessage);
 $ipaddr = $_SERVER['REMOTE_ADDR'];
 if($_POST['contact']) {
 if($_POST['fname'] == ""|$_POST['email'] == ""|$_POST['message'] == "") {
